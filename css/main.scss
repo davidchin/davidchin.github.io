@@ -6,17 +6,16 @@
 // Import SCSS libraries
 @import "../bower_components/normalize.css/normalize.css";
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+// Import base
+@import "base/base";
 @import "../bower_components/neat/app/assets/stylesheets/neat";
 
 // Import mixins
-
-// Import base
-@import "base/variable";
-@import "base/typography";
+@import "mixins/mixins";
 
 // Import modules
-@import "modules/header";
-@import "modules/hero";
+@import "modules/modules";
 
 // Import layouts
-@import "layouts/home";
+@import "layouts/layouts";
