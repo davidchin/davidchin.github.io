@@ -102,6 +102,7 @@ GEM
     pygments.rb (0.6.1)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
+    rainbow (2.0.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -109,6 +110,9 @@ GEM
     redcarpet (3.1.2)
     safe_yaml (1.0.4)
     sass (3.4.13)
+    scss-lint (0.36.1)
+      rainbow (~> 2.0)
+      sass (~> 3.4.1)
     terminal-table (1.4.5)
     thread_safe (0.3.5)
     timers (4.0.1)
@@ -125,3 +129,4 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll (~> 2.4.0)
+  scss-lint (~> 0.36.1)

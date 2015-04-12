@@ -41,10 +41,7 @@ a {
 }
 
 hr {
-  border-bottom: $base-border;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border: 0 0 $base-border 0;
   margin: $base-spacing 0;
 }
 

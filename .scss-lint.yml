@@ -1,0 +1,11 @@
+linters:
+  SelectorFormat:
+    convention: BEM
+  StringQuotes:
+    style: double_quotes
+  LeadingZero:
+    style: include_zero
+  QualifyingElement:
+    allow_element_with_attribute: true
+  PropertySortOrder:
+    order: []

@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.4.0'
 gem 'github-pages'
+gem 'jekyll', '~> 2.4.0'
+gem 'scss-lint', '~> 0.36.1', require: false
