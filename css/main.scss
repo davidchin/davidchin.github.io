@@ -11,11 +11,12 @@
 // Import mixins
 
 // Import base
-@import "base/variable.scss";
+@import "base/variable";
+@import "base/typography";
 
 // Import modules
-@import "modules/header.scss";
-@import "modules/hero.scss";
+@import "modules/header";
+@import "modules/hero";
 
 // Import layouts
-@import "layouts/home.scss";
+@import "layouts/home";
