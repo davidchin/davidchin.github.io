@@ -1,0 +1,15 @@
+.global-navigation {
+  text-transform: uppercase;
+  padding: 15px 0;
+
+  > li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  a {
+    color: $base-font-color;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}

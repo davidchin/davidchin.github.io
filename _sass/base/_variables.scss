@@ -3,7 +3,8 @@ $base-font-family: "Fira Sans", Helvetica, sans-serif;
 $heading-font-family: $base-font-family;
 $base-font-size: 16px;
 $base-line-height: 1.5;
-$heading-line-height: 1.2;
+$small-line-height: 1.2;
+$heading-line-height: $small-line-height;
 
 // Spacing
 $base-spacing: $base-line-height * 1em;
@@ -11,13 +12,15 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+$white: #fff;
+$black: #000;
 $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #ddd;
-$base-font-color: $dark-gray;
+$light-gray: #eee;
+$base-font-color: $black;
 $action-color: $blue;
-$base-border-color: $light-gray;
+$base-border-color: #ddd;
 $base-background-color: #fff;
 $secondary-background-color: lighten($base-border-color, 10%);
 
