@@ -1,0 +1,30 @@
+.contact-footer {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background: $dark-gray;
+  color: $white;
+}
+
+.contact-footer__container {
+  @include outer-container;
+}
+
+.contact-footer__title {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 0.25em;
+}
+
+.contact-footer__intro {
+  @include span-columns(8);
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.contact-footer__aside {
+  @include span-columns(4);
+}
+
+.fine-print-footer {
+  color: $medium-gray;
+}

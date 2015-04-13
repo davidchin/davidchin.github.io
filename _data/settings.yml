@@ -1,0 +1,8 @@
+disqus:
+  shortname: 'davidchin-blog-development'
+
+ga:
+  property_id: UA-41589871-2
+
+microdata:
+  url: http://schema.org

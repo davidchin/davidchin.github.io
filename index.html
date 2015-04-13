@@ -6,14 +6,14 @@ layout: plain
   <header class="hero-header">
     {% include navigation.html %}
 
-    <div class="hero-header__wrapper">
+    <div class="hero-header__container">
       <h1 class="hero-header__title">
         David Chin
       </h1>
 
-      <h2 class="hero-header__subtitle">
+      <p class="hero-header__subtitle">
         Web &amp; App Developer
-      </h2>
+      </p>
 
       <p class="hero-header__intro">
         I am a developer, specialising in front-end web and native application development.
@@ -27,39 +27,62 @@ layout: plain
     </div>
   </header>
 
-  <section class="featured-project-summaries">
-    <section class="featured-project-summary">
+  <section>
+    <section class="featured-project-section">
+      <div class="featured-project-section__container">
+        <div class="featured-project-section__intro">
+          <h1 class="featured-project-section__title">
+            Michelle Bridges 12 Week Transformation
+          </h1>
+
+          <p>
+            Michelle Bridges 12 Week Body Transformation (12WBT) is a subscription-based digital product designed to help people reach their fitness goals, such as losing weight. I was part of a team responsible for implementing and maintaining membership features for their web and iOS applications.
+          </p>
+        </div>
+
+        <aside class="featured-project-section__aside">
+          <figure>
+          </figure>
+        </aside>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <section class="minor-project-section">
       
     </section>
 
-    <section class="featured-project-summary">
+    <section class="minor-project-section">
       
     </section>
 
-    <section class="featured-project-summary">
-      
-    </section>
-
-    <section class="featured-project-summary">
+    <section class="minor-project-section">
       
     </section>
   </section>
 
-  <section class="minor-project-summaries">
-    <section class="featured-project-summary">
-      
-    </section>
-    
-    <section class="featured-project-summary">
-      
-    </section>
-    
-    <section class="featured-project-summary">
-      
-    </section>
-    
-    <section class="featured-project-summary">
-      
-    </section>
-  </section>
+  <footer class="contact-footer">
+    <div class="contact-footer__container">
+      <div class="contact-footer__intro">
+        <h1 class="contact-footer__title">
+          Get in touch
+        </h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, lectus eu tempus scelerisque, est velit eleifend dui
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-footer__container">
+      {% include footer-navigation.html %}
+
+      <aside class="fine-print-footer">
+        <p>
+          &copy; All rights reserved.
+        </p>
+      </aside>
+    </div>
+  </footer>
 </div>
