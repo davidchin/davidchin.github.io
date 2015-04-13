@@ -2,6 +2,9 @@
 $base-font-family: "Fira Sans", Helvetica, sans-serif;
 $heading-font-family: $base-font-family;
 $base-font-size: 16px;
+$base-font-weight: 400;
+$thin-font-weight: 300;
+$bold-font-weight: 700;
 $base-line-height: 1.5;
 $small-line-height: 1.2;
 $heading-line-height: $small-line-height;
@@ -14,7 +17,8 @@ $base-z-index: 0;
 // Colors
 $white: #fff;
 $black: #000;
-$blue: #477dca;
+$blue: #007ce0;
+$turquoise: #34b5d0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #eee;

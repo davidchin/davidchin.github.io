@@ -11,14 +11,14 @@
 
 .contact-footer__title {
   font-size: 60px;
-  font-weight: 300;
+  font-weight: $thin-font-weight;
   margin-bottom: 0.25em;
 }
 
 .contact-footer__intro {
   @include span-columns(8);
   font-size: 30px;
-  font-weight: 300;
+  font-weight: $thin-font-weight;
 }
 
 .contact-footer__aside {
