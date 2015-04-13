@@ -3,29 +3,7 @@ layout: plain
 ---
 
 <div class="home-layout">
-  <header class="hero-header">
-    {% include navigation.html %}
-
-    <div class="hero-header__container">
-      <h1 class="hero-header__title">
-        David Chin
-      </h1>
-
-      <p class="hero-header__subtitle">
-        Web &amp; App Developer
-      </p>
-
-      <p class="hero-header__intro">
-        I am a developer, specialising in front-end web and native application development.
-      </p>
-
-      <div class="hero-header__action">
-        <button>
-          More about me
-        </button>
-      </div>
-    </div>
-  </header>
+  {% include home/header.html %}
 
   <section>
     <section class="featured-project-section">
@@ -62,27 +40,5 @@ layout: plain
     </section>
   </section>
 
-  <footer class="contact-footer">
-    <div class="contact-footer__container">
-      <div class="contact-footer__intro">
-        <h1 class="contact-footer__title">
-          Get in touch
-        </h1>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, lectus eu tempus scelerisque, est velit eleifend dui
-        </p>
-      </div>
-    </div>
-
-    <div class="contact-footer__container">
-      {% include footer-navigation.html %}
-
-      <aside class="fine-print-footer">
-        <p>
-          &copy; All rights reserved.
-        </p>
-      </aside>
-    </div>
-  </footer>
+  {% include home/footer.html %}
 </div>
