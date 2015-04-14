@@ -1,6 +1,15 @@
 .hero-header {
   background: $light-gray;
   text-align: center;
+  position: relative;
+
+  .global-navigation {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 
 .hero-header__container {
@@ -11,18 +20,20 @@
 
 .hero-header__title,
 .hero-header__subtitle {
+  font-family: $brand-font-family;
   text-transform: uppercase;
   line-height: 1;
   margin: 0;
-  font-weight: bold;
 }
 
 .hero-header__title {
-  font-size: 150px;
+  font-size: 140px;
+  font-weight: 900;
 }
 
 .hero-header__subtitle {
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .hero-header__intro {
