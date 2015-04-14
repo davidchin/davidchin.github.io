@@ -1,12 +1,18 @@
 .contact-footer {
-  padding-top: 80px;
-  padding-bottom: 50px;
   background: $dark-gray;
   color: $white;
 }
 
 .contact-footer__container {
   @include outer-container;
+
+  &:first-child {
+    padding-top: 60px;
+  }
+
+  &:last-child {
+    padding-bottom: 30px;
+  }
 }
 
 .contact-footer__title {

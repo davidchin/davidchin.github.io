@@ -1,9 +1,4 @@
 // Featured
-.featured-project-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .featured-project-section--12wbt {
   background: $white;
 }
@@ -30,6 +25,8 @@
 
 .featured-project-section__container {
   @include outer-container;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .featured-project-section__title {
@@ -47,9 +44,10 @@
   @include span-columns(4);
 }
 
-.minor-projects-group {
+.minor-projects-group__container {
   @include outer-container;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 // Minor
