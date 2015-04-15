@@ -1,7 +1,12 @@
 $(document).ready ->
-  $("#homepage").fullpage({
-    sectionSelector: '.page-section',
-    slideSelector: '.page-section--slide',
-    navigation: true,
-    autoScrolling: false
-  })
+  html = $('body, html')
+  homepage = $("#homepage")
+
+  if homepage.get(0)
+    fullpageOptions = 
+      sectionSelector: '.page-section'
+      slideSelector: '.page-section--slide'
+      navigation: true
+      autoScrolling: false
+
+    homepage.fullpage(fullpageOptions)

@@ -1,6 +1,10 @@
 .contact-footer {
   background: $dark-gray;
   color: $white;
+
+  .global-footer-navigation {
+    border-top: 1px solid $medium-gray;
+  }
 }
 
 .contact-footer__container {

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include page-header.html %}
+
+<div class="page-content">
+  <div class="content-column">
+    <article class="blog-article">
+      <p class="blog-article__meta">
+        <strong>{{ page.categories }}</strong> /
+        {{ page.date | date_to_long_string }}
+      </p>
+      {{ content }}
+    </article>
+  </div>
+</div>

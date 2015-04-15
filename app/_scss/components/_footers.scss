@@ -1,0 +1,10 @@
+// Global footer
+.global-footer {
+  background: $dark-gray;
+  color: $white;
+}
+
+.global-footer__container {
+  @include outer-container;
+  padding-bottom: 30px;
+}

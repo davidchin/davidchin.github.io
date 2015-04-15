@@ -17,6 +17,10 @@
   font-weight: 900;
   font-family: $brand-font-family;
   text-transform: uppercase;
+
+  &, &:hover {
+    color: $black;
+  }
 }
 
 .global-navigation {

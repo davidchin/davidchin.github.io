@@ -5,6 +5,8 @@
 
   &:last-child {
     border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -22,4 +24,18 @@
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 15px;
+}
+
+.blog-article {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.blog-article__meta {
+  font-size: $base-font-size;
+  color: $medium-gray;
+
+  strong {
+    text-transform: uppercase;
+  }
 }
