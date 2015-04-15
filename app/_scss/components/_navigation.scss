@@ -38,3 +38,9 @@
 .global-footer-navigation__container {
   @include outer-container;
 }
+
+// FullPage Nav
+#fp-nav {
+  background: transparentize($white, 0.5);
+  border-radius: 14px;
+}

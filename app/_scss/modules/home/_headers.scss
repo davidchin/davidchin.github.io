@@ -20,13 +20,13 @@
 
 .hero-header__title,
 .hero-header__subtitle {
-  font-family: $brand-font-family;
   text-transform: uppercase;
   line-height: 1;
   margin: 0;
 }
 
 .hero-header__title {
+  font-family: $brand-font-family;
   font-size: 140px;
   font-weight: 900;
 }
