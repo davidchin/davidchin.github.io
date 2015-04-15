@@ -5,12 +5,12 @@
 // Import styles for 3rd party components
 @import "../_bower_components/fullpage/jquery.fullPage";
 
+// Import helpers
+@import "helpers/helpers";
+
 // Import base
 @import "base/base";
 @import "../_bower_components/neat/app/assets/stylesheets/neat";
-
-// Import helpers
-@import "helpers/helpers";
 
 // Import components
 @import "components/components";

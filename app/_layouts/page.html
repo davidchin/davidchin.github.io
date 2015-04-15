@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header>
-    <h1>
+<header class="page-header">
+  <div class="page-header__container">
+    <h1 class="page-header__title">
       {{ page.title }}
     </h1>
 
     {% if page.subtitle %}
-    <p>
+    <p class="page-header__subtitle">
       {{ page.subtitle }}
     </p>
     {% endif %}
-  </header>
+  </div>
+</header>
 
+<div class="page-content">
   {{ content }}
-
 </div>

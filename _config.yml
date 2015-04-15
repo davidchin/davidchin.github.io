@@ -9,6 +9,9 @@ author:
   name: David Chin
   email: davidchin.yf@gmail.com
 
+# URL
+url: http://davidchin.me
+
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
@@ -34,4 +37,8 @@ markdown: kramdown
 #     coderay_bold_every: 10
 #     coderay_css: style
 
-pygments: false
+# Use Pygments to highlight code blocks
+pygments: true
+
+# Default post path style
+permalink: /blog/:title/

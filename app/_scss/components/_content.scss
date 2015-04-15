@@ -1,0 +1,13 @@
+.page-content {
+  @include outer-container;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.content-column {
+  @include span-columns(8);
+}
+
+.aside-column {
+  @include span-columns(4);
+}

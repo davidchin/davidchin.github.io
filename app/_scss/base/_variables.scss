@@ -3,6 +3,7 @@ $base-font-family: "Fira Sans", Helvetica, sans-serif;
 $brand-font-family: Raleway, Helvetica, sans-serif;
 $heading-font-family: $base-font-family;
 $base-font-size: 16px;
+$small-font-size: 13px;
 $base-font-weight: 400;
 $thin-font-weight: 300;
 $bold-font-weight: 700;
@@ -25,7 +26,7 @@ $medium-gray: #999;
 $light-gray: #eee;
 $base-font-color: $black;
 $action-color: $blue;
-$base-border-color: #ddd;
+$base-border-color: #ccc;
 $base-background-color: #fff;
 $secondary-background-color: lighten($base-border-color, 10%);
 

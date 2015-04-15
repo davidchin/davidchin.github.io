@@ -1,0 +1,27 @@
+---
+layout: page
+title: Blog
+subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+---
+
+<section class="content-column">
+  {% for post in site.posts %}
+  <article class="blog-article-summary">
+    <p class="blog-article-summary__meta">
+      {{ post.date | date_to_long_string }}
+    </p>
+
+    <h1 class="blog-article-summary__title">
+      {{ post.title }}
+    </h1>
+
+    <div class="blog-article-summary__body">
+      {{ post.content | truncatewords:50 }}
+    </div>
+
+    <a href="{{ post.url }}" class="button">
+      Read more
+    </a>
+  </article>
+  {% endfor %}
+</section>

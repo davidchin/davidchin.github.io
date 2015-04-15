@@ -1,31 +1,4 @@
 #{$all-button-inputs},
 button {
-  @include appearance(none);
-  background-color: transparent;
-  border: 1px solid $black;
-  color: $black;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $base-font-family;
-  font-size: 15px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: 1em 2em;
-  text-decoration: none;
-  text-transform: uppercase;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-
-  &:hover,
-  &:focus {
-    background-color: transparentize($black, 0.95);
-    color: $black;
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
+  @include button;
 }
