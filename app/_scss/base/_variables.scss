@@ -11,6 +11,9 @@ $base-line-height: 1.5;
 $small-line-height: 1.2;
 $heading-line-height: $small-line-height;
 
+// Icon
+$ionicons-font-path: "../../_bower_components/ionicons/fonts/";
+
 // Spacing
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;

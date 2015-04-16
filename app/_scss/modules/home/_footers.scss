@@ -35,6 +35,28 @@
   @include span-columns(4);
 }
 
+.contact-footer__meta {
+  font-size: $base-font-size;
+
+  > li {
+    display: inline-block;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  i {
+    font-size: 140%;
+    vertical-align: -3px;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
 .fine-print-footer {
   color: $medium-gray;
 }
