@@ -18,7 +18,7 @@ $heading-line-height: $small-line-height;
 $ionicons-font-path: "../../_bower_components/ionicons/fonts/";
 
 // Spacing
-$base-spacing: $base-line-height * 1em;
+$base-spacing: $base-line-height * 1rem;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
@@ -34,6 +34,7 @@ $base-font-color: $black;
 $light-font-color: $white;
 $action-color: $blue;
 $base-border-color: #ccc;
+$light-border-color: #ddd;
 $base-background-color: #fff;
 $secondary-background-color: lighten($base-border-color, 10%);
 

@@ -8,3 +8,13 @@
   @include outer-container;
   padding-bottom: 30px;
 }
+
+.fine-print-footer {
+  color: $medium-gray;
+  font-size: $small-font-size;
+
+  a {
+    color: $medium-gray;
+    font-weight: $bold-font-weight;
+  }
+}

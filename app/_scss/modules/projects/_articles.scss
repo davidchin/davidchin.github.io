@@ -1,0 +1,33 @@
+.project-article-section {
+  @include outer-container;
+  padding: 80px 0;
+  border-bottom: 1px solid $light-border-color;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &:first-child {
+    padding-top: 0
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.project-article-section__body {
+  @include span-columns(6);
+}
+
+.project-article-section__figure {
+  @include span-columns(6);
+  @include omega;
+}
+
+.project-article-section--center {
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}

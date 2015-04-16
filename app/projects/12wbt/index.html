@@ -1,6 +1,74 @@
 ---
 layout: page
 title: Michelle Bridges 12 Week Body Transformation
-subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+subtitle: Subscription-based online fitness &amp; nutrition program
 ---
 
+<div class="project-article-section">
+  <h2>
+    Background
+  </h2>
+
+  <div class="project-article-section__body">
+    <p>
+      Michelle Bridges 12 Week Body Transformation (12WBT) is a subscription-based digital product designed to help people reach their fitness goals, such as losing weight. I was part of a team responsible for implementing and maintaining membership features for their web and iOS applications. For the web, we used AngularJS to structure our frontend code, which communicated with a RESTful backend built with Rails. For iOS, in order to maximize performance and achieve offline capability, we decided to go fully native using Swift. We were faced with numerous challenges during the development of the product. Here are a few notable ones:
+    </p>
+  </div>
+
+  <figure class="project-article-section__figure">
+  </figure>
+</div>
+
+<div class="project-article-section">
+  <h2>
+    Challenges
+  </h2>
+
+  <div class="project-article-section__body">
+    <p>
+      Members were able to customise their nutrition and workout plans based on their weight and fitness goals. As plans were highly customisable, we needed to make sure we sent the correct parameters when we queried the API. As personalised content was difficult to cache in the backend, we consciously tried to sidestep the cache-expiry problem and relied on the front-end to bring the data together. This meant making asynchronous API calls to different models, processing the JSON responses and presenting the data in a desirable format. We employed several layers of caching, firstly making sure responses are aggressively cached in Redis, and E-tags were generated so that HTTP caching can kick in. As more API calls needed to be made, we used $q promises extensively to improve the readability of our code (to avoid callback hell), and ensured errors can be caught or rethrown neatly.
+    </p>
+  </div>
+
+  <figure class="project-article-section__figure">
+  </figure>
+</div>
+
+<div class="project-article-section">
+  <h2>
+    Solutions
+  </h2>
+
+  <div class="project-article-section__body">
+    <p>
+      Members were encouraged to track their progress while they follow program, noting down the calories they consumed and burnt each day. There were many things you could track: a meal, a workout, hours slept, water intake, mindset, weight, measurement, fitness test etc... As the models varied in format and type - for example, some fields accepted float numbers up to 2 decimal places, while others might only accept string values - we had to pay extra attention when validating user input. To keep our controllers skinny and DRY, we delegated the responsibility of validating and normalising user input to a set of custom directives. Also, we defined the business logic in our models and/or injectable services so that they could be reused across different controllers and not coupled with a particular controller. Effectively, this allowed us to implement UIs that allowed users to track anything anywhere.
+    </p>
+  </div>
+
+  <figure class="project-article-section__figure">
+  </figure>
+</div>
+
+<div class="project-article-section project-article-section--center">
+  <h2>
+    Takeaway
+  </h2>
+
+  <p>
+    As the cost of subscription was not trivial, we wanted to avoid negative customer feedback as a result of preventable technical errors. To ensure that each release was well tested, we used Travis to streamline our continuous integration workflow, which executed a set of Grunt tasks. We used Jasmine to describe our unit tests - focusing on checking if an expected behaviour was fulfilled, so that it was less brittle and more useful in preventing regression. We stubbed out HTTP requests with mock responses to make sure tests are self-contained and repeatable. By working in BDD environment, we were encouraged to write code in a testable fashion.
+  </p>
+</div>
+
+<div class="project-article-section project-article-section--center">
+  <p>
+    <a href="https://12wbt.com" class="button">
+      View Project
+    </a>
+  </p>
+
+  <p>
+    <a href="/projects/12wbt-daily">
+      <strong>Next Project</strong> 12WBT Daily
+    </a>
+  </p>
+</div>

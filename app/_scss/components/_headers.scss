@@ -48,6 +48,11 @@
   margin-bottom: 0;
 }
 
+.page-header__title,
+.page-header__subtitle {
+  max-width: 80%;
+}
+
 .page-header__container {
   @include outer-container;
 }
