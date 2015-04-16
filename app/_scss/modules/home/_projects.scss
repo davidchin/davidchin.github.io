@@ -3,18 +3,21 @@
   background: $white;
 }
 
+.featured-project-section--12wbt-app {
+  background: $blue;
+}
+
 .featured-project-section--vibe {
   background: $dark-gray;
-  color: $white;
-
-  button {
-    border-color: $white;
-    color: $white;
-  }
 }
 
 .featured-project-section--beautyheaven {
   background: $turquoise;
+}
+
+.featured-project-section--12wbt-app,
+.featured-project-section--vibe,
+.featured-project-section--beautyheaven {
   color: $white;
 
   button {
@@ -22,6 +25,7 @@
     color: $white;
   }
 }
+
 
 .featured-project-section__container {
   @include outer-container;
