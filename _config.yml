@@ -42,3 +42,7 @@ highlighter: pygments
 
 # Default post path style
 permalink: /blog/:title/
+
+# Gems
+gems:
+  - jekyll-redirect-from
