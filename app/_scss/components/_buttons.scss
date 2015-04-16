@@ -1,3 +1,32 @@
 .button {
   @include button;
 }
+
+.button--light,
+%button--light {
+  border-color: $white;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: transparentize($white, 0.95);
+  }
+}
+
+.link-light,
+%link-light {
+  color: $light-font-color;
+
+  &:hover {
+    color: darken($light-font-color, 15%);
+  }
+}
+
+.link-dark,
+%link-dark {
+  color: $base-font-color;
+
+  &:hover {
+    color: lighten($light-font-color, 15%);
+  }
+}

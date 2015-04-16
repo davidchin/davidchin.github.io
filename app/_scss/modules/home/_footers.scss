@@ -53,7 +53,7 @@
   }
 
   a {
-    color: $white;
+    @extend %link-light;
   }
 }
 
