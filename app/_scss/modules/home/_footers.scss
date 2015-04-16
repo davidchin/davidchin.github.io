@@ -20,14 +20,14 @@
 }
 
 .contact-footer__title {
-  font-size: 60px;
+  font-size: rem(60);
   font-weight: $thin-font-weight;
   margin-bottom: 0.25em;
 }
 
 .contact-footer__intro {
   @include span-columns(8);
-  font-size: 30px;
+  font-size: rem(30);
   font-weight: $thin-font-weight;
 }
 
@@ -48,7 +48,7 @@
   }
 
   i {
-    font-size: 140%;
+    font-size: 1.4em;
     vertical-align: -3px;
   }
 
@@ -59,4 +59,5 @@
 
 .fine-print-footer {
   color: $medium-gray;
+  font-size: $small-font-size;
 }

@@ -33,14 +33,14 @@
 }
 
 .featured-project-section__title {
-  font-size: 60px;
+  font-size: rem(60);
   font-weight: $thin-font-weight;
   margin-bottom: 0.5em;
 }
 
 .featured-project-section__intro {
   @include span-columns(8);
-  font-size: 20px;
+  font-size: rem(24);
 }
 
 .featured-project-section__aside {
@@ -71,7 +71,7 @@
 .minor-project-section__image-caption {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: rem(30);
   font-weight: $thin-font-weight;
   line-height: 1;
   vertical-align: middle;

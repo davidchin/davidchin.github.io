@@ -2,11 +2,14 @@
 $base-font-family: "Fira Sans", Helvetica, sans-serif;
 $brand-font-family: Raleway, Helvetica, sans-serif;
 $heading-font-family: $base-font-family;
-$base-font-size: 16px;
-$small-font-size: 13px;
-$base-font-weight: 400;
+$base-font-size: 18px;
+$small-font-size: rem(15);
+$em-base: $base-font-size;
+$rem-base: $base-font-size;
+$base-font-weight: 300;
 $thin-font-weight: 300;
 $bold-font-weight: 700;
+$heavy-font-weight: 900;
 $base-line-height: 1.5;
 $small-line-height: 1.2;
 $heading-line-height: $small-line-height;

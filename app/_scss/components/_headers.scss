@@ -13,7 +13,7 @@
 
 .global-header__logo {
   display: inline-block;
-  font-size: 33px;
+  font-size: rem(33);
   font-weight: 900;
   font-family: $brand-font-family;
   text-transform: uppercase;
@@ -38,13 +38,13 @@
 
 .page-header__title {
   font-weight: 300;
-  font-size: 75px;
+  font-size: rem(75);
   margin-bottom: 0;
 }
 
 .page-header__subtitle {
   font-weight: 300;
-  font-size: 30px;
+  font-size: rem(30);
   margin-bottom: 0;
 }
 

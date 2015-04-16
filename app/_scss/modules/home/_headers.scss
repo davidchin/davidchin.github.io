@@ -27,22 +27,27 @@
 
 .hero-header__title {
   font-family: $brand-font-family;
-  font-size: 140px;
-  font-weight: 900;
+  font-size: rem(140);
+  font-weight: $heavy-font-weight;
 }
 
 .hero-header__subtitle {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: rem(40);
+  font-weight: $bold-font-weight;
 }
 
 .hero-header__intro {
-  font-size: 30px;
+  font-size: rem(34);
   margin: 50px auto 0;
-  max-width: 80%;
+  max-width: 60%;
   line-height: $small-line-height;
 }
 
 .hero-header__action {
   margin-top: 25px;
+}
+
+.hero-header__detail {
+  max-width: 60%;
+  margin: 1em auto 0;
 }
