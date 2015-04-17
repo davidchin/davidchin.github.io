@@ -1,0 +1,25 @@
+{% comment %}
+  Find the next project by looping through an ordered set of URLs
+{% endcomment %}
+
+{% assign page_url = page.url | replace:'/index.html','' %}
+{% for project_url in site.data.projects.urls %}
+  {% if project_url == page_url %}
+    {% if forloop.index >= forloop.length %}
+      {% assign next_project_url = site.data.projects.urls[0] %}
+    {% else %}
+      {% assign next_project_url = site.data.projects.urls[forloop.index] %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% for page in site.pages %}
+  {% assign page_url = page.url | replace:'/index.html','' %}
+  {% if next_project_url == page_url %}
+    <a href="{{ page.url | replace:'/index.html','' }}">
+      <strong>Next Project</strong> {{ page.title }}
+    </a>
+    {% break %}
+  {% endif %}
+{% endfor %}
