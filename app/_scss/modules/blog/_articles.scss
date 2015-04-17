@@ -11,7 +11,7 @@
 }
 
 .blog-article-summary__title {
-  font-size: rem(40);
+  font-size: rem(50);
   margin-bottom: 10px;
 }
 
@@ -24,9 +24,9 @@
   margin-bottom: 15px;
 }
 
-.blog-article-summary__body,
-.blog-article {
-  font-size: rem(18);
+.blog-article,
+.blog-comment {
+  @include article-section;
 }
 
 .blog-article__meta {

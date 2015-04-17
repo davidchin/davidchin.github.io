@@ -16,7 +16,11 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </h1>
 
     <div class="blog-article-summary__body">
-      {{ post.content | truncatewords:50 }}
+      {% if post.summary %}
+        {{ post.summary }}
+      {% else %}
+        {{ post.content | truncatewords:50 }}
+      {% endif %}
     </div>
 
     <a href="{{ post.url }}" class="button">
