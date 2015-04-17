@@ -1,0 +1,7 @@
+.about-article-section {
+  @include article-section;
+}
+
+.about-article-section__body {
+  @include span-columns(8);
+}

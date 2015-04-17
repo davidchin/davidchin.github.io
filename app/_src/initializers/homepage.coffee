@@ -8,6 +8,7 @@ $(document).ready ->
       slideSelector: '.page-section--slide'
       navigation: true
       autoScrolling: false
+      recordHistory: false
       anchors: [
         'about'
         'project-12wbt'
