@@ -13,15 +13,24 @@
 .blog-article-summary__title {
   font-size: rem(50);
   margin-bottom: 10px;
+
+  a {
+    color: inherit;
+  }
 }
 
 .blog-article-summary__meta {
   font-size: $small-font-size;
   color: $medium-gray;
+  margin-bottom: $base-spacing;
+
+  strong {
+    text-transform: uppercase;
+  }
 }
 
 .blog-article-summary__body {
-  margin-bottom: 15px;
+  margin-bottom: $base-spacing;
 }
 
 .blog-article,
@@ -30,10 +39,20 @@
 }
 
 .blog-article__meta {
-  font-size: $base-font-size;
+  font-size: $small-font-size;
   color: $medium-gray;
 
   strong {
     text-transform: uppercase;
+  }
+}
+
+.highlight {
+  background: $white;
+  border: 1px solid $light-border-color;
+
+  pre {
+    margin: 0;
+    padding: $base-spacing;
   }
 }

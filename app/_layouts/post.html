@@ -9,8 +9,7 @@ layout: default
     <div class="content-column">
       <div class="blog-article">
         <p class="blog-article__meta">
-          <strong>{{ page.categories }}</strong> /
-          {{ page.date | date_to_long_string }}
+          {% include blog/post-meta.html post=page %}
         </p>
 
         {{ content }}

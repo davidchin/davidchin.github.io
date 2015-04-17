@@ -8,18 +8,20 @@ subtitle: Sharing things I've learnt in development
   {% for post in site.posts %}
   <article class="blog-article-summary">
     <p class="blog-article-summary__meta">
-      {{ post.date | date_to_long_string }}
+      {% include blog/post-meta.html %}
     </p>
 
     <h1 class="blog-article-summary__title">
-      {{ post.title }}
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
     </h1>
 
     <div class="blog-article-summary__body">
       {% if post.description %}
-        {{ post.description }}
+        {{ post.description | markdownify }}
       {% else %}
-        {{ post.content | truncatewords:50 }}
+        {{ post.content | truncatewords:50 | markdownify }}
       {% endif %}
     </div>
 
