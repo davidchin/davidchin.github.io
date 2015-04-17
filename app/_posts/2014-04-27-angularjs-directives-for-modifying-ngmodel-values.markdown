@@ -2,7 +2,7 @@
 layout: post
 title: AngularJS directives for modifying ngModel values
 date: 2014-04-27 00:00:00
-tags: javascript angularjs
+tags: angularjs
 description: Recently I created a set of AngularJS directives allowing you to prepend or append a string to the model value of a ngModel without affecting its view value. For example, you might want to prepend `http://` to a web address input field instead of asking the user to enter it. And you want this to happen before sending its form to the server.
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Disable AngularJS ngAnimate for selected elements
 date: 2014-10-03 00:00:00
-tags: javascript angularjs
+tags: angularjs
 description: There are two ways to disable ngAnimate for selected elements. You can tell Angular to only watch for CSS transitional changes to directive elements if they have a specific class name. Alternatively, if you're writing your own directive, you can call the `$animate.enabled` method directly to disable animation.
 ---
 

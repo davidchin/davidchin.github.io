@@ -2,7 +2,7 @@
 layout: post
 title: Endless scrolling in AngularJS
 date: 2014-04-21 00:00:00
-tags: javascript angularjs
+tags: angularjs
 description: Endless scrolling (or infinite scrolling) can be neatly implement in AngularJS by isolating DOM logic in a directive. It is a useful UI feature allowing users to load the next set of data without having to click on a pagination link or navigate to a different page. However, as more items get loaded and more DOM elements get rendered, front-end performance becomes an issue as more memory gets consumed.
 ---
 

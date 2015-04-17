@@ -2,7 +2,7 @@
 layout: post
 title: Using HttpInterceptor to listen for page load event in AngularJS
 date: 2014-10-03 00:00:00
-tags: javascript angularjs
+tags: angularjs
 ---
 
 Often you need to make several GET API requests and fetch a few HTML partials to render an AngularJS page. To know when a page finishes loading, obviously you cannot just listen for `DOMContentLoaded` event, because AJAX calls happen afterwards. Instead, you can use a HttpInterceptor to monitor the completion of all GET requests when $location changes.

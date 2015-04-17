@@ -2,7 +2,7 @@
 layout: post
 title: Using ngAnimate to animate directives in AngularJS
 date: 2014-05-17 00:00:00
-tags: javascript angularjs
+tags: angularjs
 description: AngularJS makes it easy to animate elements using CSS. When ngAnimate module is specified as a dependency, many default Angular directives inherit the ability to automatically add and/or remove classes when certain events occur.
 ---
 

@@ -19,16 +19,6 @@
   }
 }
 
-.blog-article-summary__meta {
-  font-size: $small-font-size;
-  color: $medium-gray;
-  margin-bottom: $base-spacing;
-
-  strong {
-    text-transform: uppercase;
-  }
-}
-
 .blog-article-summary__body {
   margin-bottom: $base-spacing;
 }
@@ -38,18 +28,25 @@
   @include article-section;
 }
 
-.blog-article__meta {
+.blog-article__meta,
+.blog-article-summary__meta {
   font-size: $small-font-size;
   color: $medium-gray;
+  margin-bottom: $base-spacing;
 
   strong {
     text-transform: uppercase;
+  }
+
+  a {
+    color: inherit;
   }
 }
 
 .highlight {
   background: $white;
   border: 1px solid $light-border-color;
+  margin-bottom: $base-spacing;
 
   pre {
     margin: 0;

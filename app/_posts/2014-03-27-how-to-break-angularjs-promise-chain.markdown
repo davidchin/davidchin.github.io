@@ -2,7 +2,7 @@
 layout: post
 title: How to break AngularJS promise chain
 date: 2014-03-27 00:00:00
-tags: javascript css
+tags: angularjs
 description: Using a promise chain is a very powerful way to handle asynchronous calls. Especially, when you need to make API calls sequently, where the second call depends on the response of the first call.
 ---
 

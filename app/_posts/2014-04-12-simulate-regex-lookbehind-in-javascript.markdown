@@ -2,7 +2,7 @@
 layout: post
 title: Simulate RegEx lookbehind in JavaScript
 date: 2014-04-12 00:00:00
-tags: javascript regexp
+tags: javascript
 description: RegEx lookbehind is a very useful tool as it allows you to check whether a string appears before a pattern you try to match. Unfortunately, it is not available in JavaScript - therefore, in order to achieve a similar effect, we have to find another way to fake it.
 ---
 
