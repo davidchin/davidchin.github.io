@@ -8,9 +8,14 @@
   }
 
   a {
+    @include transition(color 0.3s linear);
     color: $base-font-color;
     font-weight: bold;
     font-size: rem(20);
+
+    &:hover {
+      color: $action-color;
+    }
   }
 }
 
