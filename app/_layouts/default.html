@@ -7,7 +7,12 @@
 
     {{ content }}
 
-    {% include footer.html %}
+    {% if page.footer == 'contact' %}
+      {% include contact-footer.html %}
+    {% else %}
+      {% include footer.html %}
+    {% endif %}
+
     {% include foot.html %}
   </body>
 </html>
