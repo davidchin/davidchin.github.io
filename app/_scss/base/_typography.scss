@@ -31,11 +31,15 @@ h3 {
   font-size: rem(30);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: $thin-font-weight;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: $base-font-size;
 }
 

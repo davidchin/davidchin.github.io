@@ -18,7 +18,8 @@
   font-family: $brand-font-family;
   text-transform: uppercase;
 
-  &, &:hover {
+  &,
+  &:hover {
     color: $black;
   }
 }
@@ -33,7 +34,6 @@
 // Page header
 .page-header {
   background: $light-gray;
-  padding: 60px 0;
 }
 
 .page-header__title {
@@ -53,6 +53,22 @@
   max-width: 80%;
 }
 
+.page-header__accessory-title {
+  text-transform: uppercase;
+  font-size: $small-font-size;
+  color: inherit;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
 .page-header__container {
   @include outer-container;
+  padding: 70px 0;
+  position: relative;
 }

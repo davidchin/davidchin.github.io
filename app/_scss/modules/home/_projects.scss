@@ -26,7 +26,6 @@
   }
 }
 
-
 .featured-project-section__container {
   @include outer-container;
   padding-top: 60px;
@@ -37,6 +36,17 @@
   font-size: rem(60);
   font-weight: $thin-font-weight;
   margin-bottom: 0.5em;
+}
+
+.featured-project-section__accessory-title {
+  text-transform: uppercase;
+  font-size: $base-font-size;
+  color: inherit;
+  opacity: 0.5;
+
+  &:hover {
+    color: inherit;
+  }
 }
 
 .featured-project-section__intro {
@@ -82,3 +92,9 @@
 .minor-project-section__action {
   margin-top: 30px;
 }
+
+.minor-projects-group__title {
+  text-align: center;
+  font-size: rem(50);
+}
+

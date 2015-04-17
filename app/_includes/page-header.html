@@ -9,5 +9,11 @@
       {{ page.subtitle }}
     </p>
     {% endif %}
+
+    {% if page.accessory_title %}
+    <a href="{{ page.accessory_url }}" class="page-header__accessory-title">
+      {{ page.accessory_title }}
+    </a>
+    {% endif %}
   </div>
 </header>
