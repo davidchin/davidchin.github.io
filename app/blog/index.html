@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+subtitle: Sharing things I've learnt in development
 ---
 
 <section class="content-column">
@@ -16,8 +16,8 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit
     </h1>
 
     <div class="blog-article-summary__body">
-      {% if post.summary %}
-        {{ post.summary }}
+      {% if post.description %}
+        {{ post.description }}
       {% else %}
         {{ post.content | truncatewords:50 }}
       {% endif %}

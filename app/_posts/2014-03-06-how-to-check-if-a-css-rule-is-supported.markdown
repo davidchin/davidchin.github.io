@@ -4,7 +4,7 @@ title: How to check if a CSS rule is supported
 browser_title: 
 date: 2014-03-06 00:00:00
 categories: javascript css
-summary: Sometimes, you want to check if a CSS rule is supported by your user’s current browser using Javascript. For example, you might want to check if the browser supports CSS transition, if not, use jQuery animation as a fallback.
+description: Sometimes, you want to check if a CSS rule is supported by your user’s current browser using Javascript. For example, you might want to check if the browser supports CSS transition, if not, use jQuery animation as a fallback.
 ---
 
 Sometimes, you want to check if a CSS rule is supported by your user’s current browser using Javascript. For example, you might want to check if the browser supports CSS transition, if not, use jQuery animation as a fallback. Here is a way to do it:
