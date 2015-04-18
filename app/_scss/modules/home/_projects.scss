@@ -5,7 +5,6 @@
 }
 
 .featured-project-section--12wbt {
-  @include gradient-mask($white);
   background: $white;
 }
 
@@ -29,6 +28,24 @@
   .button,
   button {
     @extend %button--light;
+  }
+}
+
+.featured-project-section--12wbt,
+.featured-project-section--vibe {
+  .featured-project-section__figure {
+    @include shift(7);
+  }
+}
+
+.featured-project-section--12wbt-app,
+.featured-project-section--beautyheaven {
+  .featured-project-section__intro {
+    @include shift(5);
+  }
+
+  .featured-project-section__image {
+    right: 0;
   }
 }
 
@@ -58,24 +75,35 @@
 .featured-project-section__intro {
   @include span-columns(7);
   font-size: rem(24);
+  min-height: 1px;
 }
 
-.featured-project-section__aside {
-  @include span-columns(5);
-}
-
+.featured-project-section__aside,
 .featured-project-section__figure {
-  position: absolute;
-  top: 60px;
-  margin: 0 rem(20);
+  @include span-columns(5);
+  position: relative;
+  min-height: 1px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
 
-  img,
-  picture {
-    display: block;
-    max-width: none;
-    width: 680px;
-    box-shadow: 0 5px 40px transparentize($black, 0.9);
-  }
+.featured-project-section__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.featured-project-section__image {
+  position: absolute;
+  margin: $base-spacing;
+  display: block;
+  max-width: none;
+  width: 680px;
+  box-shadow: 0 5px 40px transparentize($black, 0.8);
 }
 
 // Minor
