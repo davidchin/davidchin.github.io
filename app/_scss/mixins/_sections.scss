@@ -16,3 +16,16 @@
     padding-bottom: 0;
   }
 }
+
+@mixin gradient-mask($color) {
+  &:after {
+    @include linear-gradient(transparentize($color, 1), $color);
+    position: absolute;
+    display: block;
+    content: " ";
+    height: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
