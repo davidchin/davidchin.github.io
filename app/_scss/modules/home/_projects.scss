@@ -66,34 +66,21 @@
 
 // Minor
 .minor-project-section {
-  @include outer-container;
-  @include clearfix;
-  margin: $large-spacing 0;
+  @include span-columns(4);
+  font-size: $small-font-size;
 }
 
 .minor-project-section__title {
   font-size: rem(30);
   margin-bottom: rem(5);
 }
-
-.minor-project-section__body {
-  @include span-columns(7);
-  line-height: 300px;
-}
-
-.minor-project-section__body-container {
-  display: inline-block;
-  line-height: $base-line-height;
-  vertical-align: middle;
-}
-
 .minor-project-section__image {
-  @include span-columns(5);
   display: block;
-  height: 300px;
-  line-height: 300px;
+  height: 250px;
+  line-height: 250px;
   background: $light-gray;
   text-align: center;
+  margin-bottom: $base-spacing;
 }
 
 .minor-project-section__image-caption {
