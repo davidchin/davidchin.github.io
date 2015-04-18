@@ -6,9 +6,12 @@
   @include span-columns(6);
 }
 
-.project-article-section__figure {
+.project-article-section__aside {
   @include span-columns(6);
-  @include omega;
+}
+
+.project-article-section__figure {
+  margin: 0;
 }
 
 .project-article-section--center {
