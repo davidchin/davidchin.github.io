@@ -55,12 +55,8 @@
 
 .page-header__accessory-title {
   text-transform: uppercase;
-  font-size: $small-font-size;
   color: inherit;
-  opacity: 0.3;
-  position: absolute;
-  right: 0;
-  bottom: 15px;
+  opacity: 0.5;
 
   &:hover {
     color: inherit;

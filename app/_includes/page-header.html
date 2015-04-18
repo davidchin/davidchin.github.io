@@ -1,5 +1,11 @@
 <header class="page-header">
   <div class="page-header__container">
+    {% if page.accessory_title %}
+    <a href="{{ page.accessory_url }}" class="page-header__accessory-title">
+      {{ page.accessory_title }}
+    </a>
+    {% endif %}
+
     <h1 class="page-header__title">
       {{ page.title }}
     </h1>
@@ -8,12 +14,6 @@
     <p class="page-header__subtitle">
       {{ page.subtitle }}
     </p>
-    {% endif %}
-
-    {% if page.accessory_title %}
-    <a href="{{ page.accessory_url }}" class="page-header__accessory-title">
-      {{ page.accessory_title }}
-    </a>
     {% endif %}
   </div>
 </header>
