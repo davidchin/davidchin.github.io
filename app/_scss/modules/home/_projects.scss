@@ -50,12 +50,12 @@
 }
 
 .featured-project-section__intro {
-  @include span-columns(8);
+  @include span-columns(7);
   font-size: rem(24);
 }
 
 .featured-project-section__aside {
-  @include span-columns(4);
+  @include span-columns(5);
 }
 
 .minor-projects-group__container {
@@ -66,16 +66,33 @@
 
 // Minor
 .minor-project-section {
-  @include span-columns(4);
-  text-align: center;
+  @include outer-container;
+  @include clearfix;
+  margin: $large-spacing 0;
+}
+
+.minor-project-section__title {
+  font-size: rem(30);
+  margin-bottom: rem(5);
+}
+
+.minor-project-section__body {
+  @include span-columns(7);
+  line-height: 300px;
+}
+
+.minor-project-section__body-container {
+  display: inline-block;
+  line-height: $base-line-height;
+  vertical-align: middle;
 }
 
 .minor-project-section__image {
+  @include span-columns(5);
   display: block;
-  height: 250px;
-  line-height: 250px;
+  height: 300px;
+  line-height: 300px;
   background: $light-gray;
-  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -84,7 +101,7 @@
   text-transform: uppercase;
   font-size: rem(30);
   font-weight: $thin-font-weight;
-  line-height: 1;
+  line-height: $base-line-height;
   vertical-align: middle;
   margin: 0;
 }
@@ -95,6 +112,5 @@
 
 .minor-projects-group__title {
   text-align: center;
-  font-size: rem(50);
+  font-size: rem(60);
 }
-

@@ -8,6 +8,7 @@ $(document).ready ->
       slideSelector: '.page-section--slide'
       navigation: true
       autoScrolling: false
+      fitToSection: false
       recordHistory: false
 
     homepage.fullpage(fullpageOptions)
