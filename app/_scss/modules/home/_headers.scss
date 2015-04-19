@@ -26,9 +26,8 @@
 }
 
 .hero-header__title {
-  font-family: $brand-font-family;
-  font-size: rem(140);
-  font-weight: $heavy-font-weight;
+  @include logo(700px, 91px);
+  margin-bottom: rem(20);
 }
 
 .hero-header__subtitle {

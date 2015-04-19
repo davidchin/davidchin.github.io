@@ -12,11 +12,8 @@
 }
 
 .global-header__logo {
+  @include logo(170px, 22px);
   display: inline-block;
-  font-size: rem(33);
-  font-weight: 900;
-  font-family: $brand-font-family;
-  text-transform: uppercase;
 
   &,
   &:hover {
@@ -28,7 +25,7 @@
   display: inline-block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -10px;
 }
 
 // Page header

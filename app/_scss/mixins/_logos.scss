@@ -1,0 +1,9 @@
+@mixin logo($width, $height) {
+  @include hide-text;
+  display: inline-block;
+  background: url(/img/components/logo.svg) no-repeat 0 0;
+  background-size: cover;
+  width: $width;
+  height: $height;
+  vertical-align: middle;
+}
