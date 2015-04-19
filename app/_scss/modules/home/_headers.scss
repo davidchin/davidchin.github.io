@@ -27,6 +27,7 @@
 
 .hero-header__title {
   margin-bottom: rem(20);
+  line-height: 0;
 }
 
 .hero-header__logo {
@@ -35,29 +36,46 @@
 }
 
 .hero-header__subtitle {
-  font-size: rem(40);
+  font-size: rem(25);
   font-weight: $bold-font-weight;
 }
 
 .hero-header__intro {
-  font-size: rem(34);
-  margin: rem(50) auto 0;
-  max-width: 80%;
+  font-size: rem(25);
+  margin: $base-spacing auto 0;
   line-height: $small-line-height;
 }
 
 .hero-header__action {
-  margin-top: 25px;
+  margin-top: $base-spacing;
 }
 
 .hero-header__detail {
-  max-width: 80%;
   margin: 1em auto 0;
 }
 
-@include media($large-screen-down) {
+.hero-header__intro,
+.hero-header__detail {
+  max-width: none;
+}
+
+@include media($small-screen-up) {
+  .hero-header__subtitle {
+    font-size: rem(40);
+  }
+
+  .hero-header__intro {
+    font-size: rem(34);
+  }
+
+  .hero-header__intro {
+    margin-top: $large-spacing;
+  }
+}
+
+@include media($large-screen-up) {
   .hero-header__intro,
   .hero-header__detail {
-    max-width: none;
+    max-width: 80%;
   }
 }

@@ -21,13 +21,13 @@
   }
 }
 
-@mixin gradient-mask($color) {
+@mixin vertical-gradient-mask($color, $length: rem(100)) {
   &:after {
     @include linear-gradient(transparentize($color, 1), $color);
     position: absolute;
     display: block;
     content: " ";
-    height: rem(100);
+    height: $length;
     left: 0;
     right: 0;
     bottom: 0;
@@ -40,11 +40,16 @@
   $large-page-container-padding: $base-spacing;
   $small-page-container-padding: rem(20);
 
-  @include media(new-breakpoint(max-width ($large-screen-max-width + $large-page-container-padding * 2))) {
-    padding: $large-page-container-padding;
+  padding-left: $small-page-container-padding;
+  padding-right: $small-page-container-padding;
+
+  @include media($medium-screen-up) {
+    padding-left: $large-page-container-padding;
+    padding-right: $large-page-container-padding;
   }
 
-  @include media($medium-screen-down) {
-    padding: $small-page-container-padding;
+  @include media(new-breakpoint(min-width $extra-large-screen-min-width + $large-page-container-padding)) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

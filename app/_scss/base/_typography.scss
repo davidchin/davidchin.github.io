@@ -8,39 +8,10 @@ body {
   line-height: $base-line-height;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-font-family;
-  line-height: $heading-line-height;
-  margin: 0 0 $base-spacing;
-}
-
-h1 {
-  font-size: rem(75);
-}
-
-h2 {
-  font-size: rem(50);
-}
-
-h3 {
-  font-size: rem(30);
-}
-
-h1,
-h2,
-h3 {
-  font-weight: $thin-font-weight;
-}
-
-h4,
-h5,
-h6 {
-  font-size: $base-font-size;
+@for $level from 1 to 6 {
+  h#{$level} {
+    @include heading-font($level);
+  }
 }
 
 p {
@@ -79,3 +50,10 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+@include media($medium-screen-up) {
+  body {
+    font-size: $large-font-size;
+  }
+}
+

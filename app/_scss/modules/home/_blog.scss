@@ -1,36 +1,53 @@
 .recent-articles-section__title {
+  @include heading-font(2);
   text-align: center;
-  font-size: rem(60);
 }
 
 .recent-articles-section__container {
   @include page-container;
-  padding: $large-spacing;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
 }
 
 .recent-articles-group {
-  @include page-container;
+  @include outer-container;
 }
 
 .recent-articles-section__action {
-  margin-top: $base-spacing;
   text-align: center;
 }
 
 .recent-article-section {
-  @include span-columns(6);
   margin-top: $base-spacing;
   margin-bottom: $base-spacing;
 
-  &:nth-child(2n+1) {
-    @include omega;
+  &:first-of-type {
+    margin-top: 0;
   }
 
   .blog-article-summary__title {
-    font-size: $base-spacing;
+    @include heading-font(3);
   }
 
   .blog-article-summary__meta {
     margin-bottom: rem(5);
+  }
+}
+
+@include media($medium-screen-up) {
+  .recent-articles-section__title {
+    padding: $large-spacing;
+  }
+
+  .recent-article-section {
+    @include span-columns(6);
+
+    &:nth-child(2n+1) {
+      @include omega;
+    }
+  }
+
+  .recent-articles-section__action {
+    margin-top: $base-spacing;
   }
 }

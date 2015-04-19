@@ -28,26 +28,23 @@
   top: -10px;
 }
 
+// -----
 // Page header
 .page-header {
   background: $light-gray;
 }
 
 .page-header__title {
-  font-weight: 300;
-  font-size: rem(75);
-  margin-bottom: 0;
+  @include heading-font(1);
 }
 
 .page-header__subtitle {
-  font-weight: 300;
-  font-size: rem(30);
-  margin-bottom: 0;
+  @include heading-font(3);
 }
 
 .page-header__title,
 .page-header__subtitle {
-  max-width: 80%;
+  margin-bottom: 0;
 }
 
 .page-header__accessory-title {
@@ -63,6 +60,14 @@
 
 .page-header__container {
   @include page-container;
-  padding: rem(70) 0;
+  padding-top: rem(70);
+  padding-bottom: rem(70);
   position: relative;
+}
+
+@include media($large-screen-up) {
+  .page-header__title,
+  .page-header__subtitle {
+    max-width: 80%;
+  }
 }

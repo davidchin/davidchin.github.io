@@ -1,0 +1,27 @@
+@mixin heading-font($level) {
+  font-family: $heading-font-family;
+  font-weight: $thin-font-weight;
+  line-height: $heading-line-height;
+  margin: 0 0 $base-spacing;
+
+  @if $level == 1 {
+    font-size: rem(60);
+  } @else if $level == 2 {
+    font-size: rem(40);
+  } @else if $level == 3 {
+    font-size: rem(25);
+  } @else {
+    font-size: $base-font-size;
+    font-weight: $bold-font-weight;
+  }
+
+  @include media($large-screen-up) {
+    @if $level == 1 {
+      font-size: rem(75);
+    } @else if $level == 2 {
+      font-size: rem(50);
+    } @else if $level == 3 {
+      font-size: rem(30);
+    }
+  }
+}
