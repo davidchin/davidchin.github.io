@@ -18,7 +18,7 @@
     color: inherit;
 
     &:hover {
-      color: $hover-base-font-color;
+      color: $action-color;
     }
   }
 }
@@ -44,6 +44,10 @@
 
   a {
     color: inherit;
+
+    &:hover {
+      color: $action-color;
+    }
   }
 }
 
