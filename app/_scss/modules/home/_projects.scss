@@ -43,17 +43,13 @@
   .featured-project-section__intro {
     @include shift(5);
   }
-
-  .featured-project-section__image {
-    right: 0;
-  }
 }
 
 .featured-project-section__container {
   @include outer-container;
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
   z-index: 1;
 }
 
@@ -111,7 +107,9 @@
 }
 
 .featured-project-section__image--small {
-  width: 480px;
+  width: 400px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 // Minor

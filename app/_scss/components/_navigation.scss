@@ -1,6 +1,6 @@
 .global-navigation {
   text-transform: uppercase;
-  padding: 15px 0;
+  padding: rem(15) 0;
 
   > ul > li {
     display: inline-block;
@@ -19,7 +19,7 @@
 }
 
 .global-footer-navigation {
-  padding: 40px 0;
+  padding: rem(40) 0;
   clear: both;
 
   > ul > li {

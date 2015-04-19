@@ -1,7 +1,7 @@
 .blog-article-summary {
   border-bottom: $base-border;
-  padding-bottom: 60px;
-  margin-bottom: 60px;
+  padding-bottom: rem(60);
+  margin-bottom: rem(60);
 
   &:last-child {
     border-bottom: 0;
@@ -12,7 +12,7 @@
 
 .blog-article-summary__title {
   font-size: rem(50);
-  margin-bottom: 10px;
+  margin-bottom: rem(10);
 
   a {
     color: inherit;
@@ -49,6 +49,10 @@
       color: $action-color;
     }
   }
+}
+
+.blog-article-summary__meta {
+  margin-bottom: $small-spacing;
 }
 
 .highlight {

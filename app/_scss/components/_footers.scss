@@ -6,7 +6,7 @@
 
 .global-footer__container {
   @include outer-container;
-  padding-bottom: 30px;
+  padding-bottom: rem(30);
 }
 
 .fine-print-footer {
@@ -26,7 +26,7 @@
 
   .global-footer-navigation {
     border-top: 1px solid $dark-border-color;
-    margin-top: 30px;
+    margin-top: rem(30);
   }
 }
 
@@ -34,11 +34,11 @@
   @include outer-container;
 
   &:first-child {
-    padding-top: 60px;
+    padding-top: rem(60);
   }
 
   &:last-child {
-    padding-bottom: 30px;
+    padding-bottom: rem(30);
   }
 }
 
@@ -63,7 +63,7 @@
 
   > li {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: rem(40);
 
     &:last-child {
       margin-right: 0;
