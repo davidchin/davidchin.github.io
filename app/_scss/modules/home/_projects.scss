@@ -106,7 +106,7 @@
   display: block;
   max-width: none;
   width: 680px;
-  box-shadow: 0 5px 40px transparentize($black, 0.8);
+  box-shadow: $image-box-shadow;
 }
 
 .featured-project-section__image--small {

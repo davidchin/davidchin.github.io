@@ -9,11 +9,11 @@ accessory_url: //redant.com.au
 ---
 
 <div class="project-article-section">
-  <h2>
-    Background
-  </h2>
-
   <div class="project-article-section__body">
+    <h2>
+      Background
+    </h2>
+
     <p>
       Michelle Bridges 12 Week Body Transformation (12WBT) is a subscription-based digital product designed to help people reach their fitness goals, such as losing weight. Members are encouraged to track and share their progress while they follow their program. I was part of an agile team responsible for implementing and maintaining membership features of their website.
     </p>
@@ -25,16 +25,17 @@ accessory_url: //redant.com.au
 
   <div class="project-article-section__aside">
     <figure class="project-article-section__figure">
+      <img data-src="/img/projects/12wbt/dashboard.jpg" class="project-article-section__image lazyload"/>
     </figure>
   </div>
 </div>
 
 <div class="project-article-section">
-  <h2>
-    API-Driven
-  </h2>
-
   <div class="project-article-section__body">
+    <h2>
+      API-Driven
+    </h2>
+
     <p>
       Members are able to customise their nutrition and workout plans based on their weight and fitness goals. As plans are highly customisable, we needed to make sure that, we were sending the correct parameters when we queried the API.
     </p>
@@ -52,11 +53,11 @@ accessory_url: //redant.com.au
 </div>
 
 <div class="project-article-section">
-  <h2>
-    Caching strategies
-  </h2>
-
   <div class="project-article-section__body">
+    <h2>
+      Caching strategies
+    </h2>
+
     <p>
       We employed several layers of caching, making sure responses were aggressively cached in Redis, and E-tags were generated so that HTTP caching could kick in. We also used LocalStorage to cache data that was expensive to regenerate.
     </p>
@@ -74,11 +75,11 @@ accessory_url: //redant.com.au
 </div>
 
 <div class="project-article-section">
-  <h2>
-    User input &amp; validation
-  </h2>
-
   <div class="project-article-section__body">
+    <h2>
+      User input &amp; validation
+    </h2>
+
     <p>
       Members can track a variety of different things, a meal, a workout, hours slept, water intake, mindset, weight, measurement, fitness test etc... They all varied in format and required different UI and interactions. Therefore, we had to pay extra attention when validating user input.
     </p>
@@ -96,11 +97,11 @@ accessory_url: //redant.com.au
 </div>
 
 <div class="project-article-section">
-  <h2>
-    Unit &amp; E2E testing
-  </h2>
-
   <div class="project-article-section__body">
+    <h2>
+      Unit &amp; E2E testing
+    </h2>
+
     <p>
       To ensure that each release was well tested, we used Travis to streamline our Continuous Integration workflow. We used Jasmine to describe our unit tests, focusing on testing the expected behaviours of classes and functions. We stubbed out HTTP requests with mock responses to make sure tests were self-contained and repeatable. We aimed to write tests that were not brittle and useful in preventing regression.
     </p>

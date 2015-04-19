@@ -1,5 +1,6 @@
 .project-article-section {
   @include article-section;
+  overflow: hidden;
 }
 
 .project-article-section__body {
@@ -8,10 +9,20 @@
 
 .project-article-section__aside {
   @include span-columns(6);
+  position: relative;
 }
 
 .project-article-section__figure {
   margin: 0;
+}
+
+.project-article-section__image {
+  position: absolute;
+  margin: 0 $base-spacing;
+  display: block;
+  max-width: none;
+  width: 680px;
+  box-shadow: $image-box-shadow;
 }
 
 .project-article-section--center {
