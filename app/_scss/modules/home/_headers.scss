@@ -42,7 +42,7 @@
 .hero-header__intro {
   font-size: rem(34);
   margin: rem(50) auto 0;
-  max-width: 60%;
+  max-width: 80%;
   line-height: $small-line-height;
 }
 
@@ -51,6 +51,13 @@
 }
 
 .hero-header__detail {
-  max-width: 60%;
+  max-width: 80%;
   margin: 1em auto 0;
+}
+
+@include media($large-screen-down) {
+  .hero-header__intro,
+  .hero-header__detail {
+    max-width: none;
+  }
 }

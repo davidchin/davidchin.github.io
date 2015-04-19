@@ -6,7 +6,7 @@
 
 .global-footer__container {
   @include page-container;
-  padding-bottom: rem(30);
+  padding-bottom: $base-spacing;
 }
 
 .fine-print-footer {
@@ -27,7 +27,7 @@
 
   .global-footer-navigation {
     border-top: 1px solid $dark-border-color;
-    margin-top: rem(30);
+    margin-top: $base-spacing;
   }
 }
 
@@ -35,11 +35,11 @@
   @include page-container;
 
   &:first-child {
-    padding-top: rem(60);
+    padding-top: $large-spacing;
   }
 
   &:last-child {
-    padding-bottom: rem(30);
+    padding-bottom: $base-spacing;
   }
 }
 
@@ -51,7 +51,7 @@
 
 .contact-footer__intro {
   @include span-columns(6);
-  font-size: rem(30);
+  font-size: $base-spacing;
   font-weight: $thin-font-weight;
 }
 

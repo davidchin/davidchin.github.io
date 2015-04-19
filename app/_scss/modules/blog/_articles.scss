@@ -1,7 +1,7 @@
 .blog-article-summary {
   border-bottom: $base-border;
-  padding-bottom: rem(60);
-  margin-bottom: rem(60);
+  padding-bottom: $large-spacing;
+  margin-bottom: $large-spacing;
 
   &:last-child {
     border-bottom: 0;

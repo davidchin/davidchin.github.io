@@ -5,7 +5,7 @@
 
 .recent-articles-section__container {
   @include page-container;
-  padding: rem(60);
+  padding: $large-spacing;
 }
 
 .recent-articles-group {
@@ -13,21 +13,21 @@
 }
 
 .recent-articles-section__action {
-  margin-top: rem(30);
+  margin-top: $base-spacing;
   text-align: center;
 }
 
 .recent-article-section {
   @include span-columns(6);
-  margin-top: rem(30);
-  margin-bottom: rem(30);
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
 
   &:nth-child(2n+1) {
     @include omega;
   }
 
   .blog-article-summary__title {
-    font-size: rem(30);
+    font-size: $base-spacing;
   }
 
   .blog-article-summary__meta {

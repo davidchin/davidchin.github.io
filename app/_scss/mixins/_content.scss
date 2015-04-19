@@ -37,7 +37,7 @@
 @mixin page-container {
   @include outer-container;
 
-  $large-page-container-padding: rem(30);
+  $large-page-container-padding: $base-spacing;
   $small-page-container-padding: rem(20);
 
   @include media(new-breakpoint(max-width ($large-screen-max-width + $large-page-container-padding * 2))) {
