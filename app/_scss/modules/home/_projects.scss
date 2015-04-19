@@ -115,10 +115,19 @@
 }
 
 // Minor
+.minor-projects-group {
+  border-bottom: $base-border;
+}
+
 .minor-projects-group__container {
   @include outer-container;
   padding-top: rem(60);
   padding-bottom: rem(60);
+}
+
+.minor-projects-group__title {
+  text-align: center;
+  font-size: rem(60);
 }
 
 .minor-project-section {
@@ -152,9 +161,4 @@
 
 .minor-project-section__action {
   margin-top: $base-spacing;
-}
-
-.minor-projects-group__title {
-  text-align: center;
-  font-size: rem(60);
 }

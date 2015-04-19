@@ -1,0 +1,29 @@
+<section class="page-section recent-articles-section">
+  <div class="recent-articles-section__container">
+    <h1 class="recent-articles-section__title">
+      Recent articles
+    </h1>
+
+    <div class="recent-articles-group">
+      {% for post in site.posts | limit:4 %}
+        <div class="recent-article-section">
+          <p class="blog-article-summary__meta">
+            {% include blog/post-meta.html %}
+          </p>
+
+          <h2 class="blog-article-summary__title">
+            <a href="{{ post.url }}">
+              {{ post.title }}
+            </a>
+          </h2>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="recent-articles-section__action">
+      <a href="/blog" class="button">
+        More blog articles
+      </a>
+    </div>
+  </div>
+</section>

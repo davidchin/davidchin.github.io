@@ -1,0 +1,38 @@
+.recent-articles-section__title {
+  text-align: center;
+  font-size: rem(60);
+}
+
+.recent-articles-section__container {
+  @include outer-container;
+  padding: rem(60);
+  // padding-top: rem(60);
+  // padding-bottom: rem(60);
+}
+
+.recent-articles-group {
+  @include outer-container;
+}
+
+.recent-articles-section__action {
+  margin-top: rem(30);
+  text-align: center;
+}
+
+.recent-article-section {
+  @include span-columns(6);
+  margin-top: rem(30);
+  margin-bottom: rem(30);
+
+  &:nth-child(2n+1) {
+    @include omega;
+  }
+
+  .blog-article-summary__title {
+    font-size: rem(30);
+  }
+
+  .blog-article-summary__meta {
+    margin-bottom: rem(5);
+  }
+}
