@@ -4,9 +4,46 @@
 // $grid-columns: 12;
 // $max-width: rem(1088);
 
-// Neat Breakpoints
-$medium-screen: rem(640);
-$large-screen: rem(860);
+// -----
+// Width variables
+$max-width: rem(1088);
 
-$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
-$large-screen-up: new-breakpoint(min-width $large-screen 8);
+// Small
+$small-screen-max-width: rem(640);
+
+// Medium
+$medium-screen-min-width: rem(641);
+$medium-screen-max-width: rem(860);
+
+// Large
+$large-screen-min-width: rem(861);
+$large-screen-max-width: $max-width;
+
+// Extra large
+$extra-large-screen-min-width: rem(1089);
+$extra-large-screen-max-width: rem(1200);
+
+// Mega large
+$mega-large-screen-min-width: rem(1201);
+
+// -----
+// Breakpoints
+// Small
+$small-screen: new-breakpoint(max-width $small-screen-max-width);
+$small-screen-up: new-breakpoint(min-width $medium-screen-min-width);
+$small-screen-down: new-breakpoint(max-width $small-screen-max-width);
+
+// Medium
+$medium-screen: new-breakpoint(min-width $medium-screen-min-width max-width $medium-screen-max-width);
+$medium-screen-up: new-breakpoint(min-width $large-screen-min-width);
+$medium-screen-down: new-breakpoint(max-width $medium-screen-max-width);
+
+// Large
+$large-screen: new-breakpoint(min-width $large-screen-min-width max-width $large-screen-max-width);
+$large-screen-up: new-breakpoint(min-width $extra-large-screen-min-width);
+$large-screen-down: new-breakpoint(max-width $large-screen-max-width);
+
+// Extra large
+$extra-large-screen: new-breakpoint(min-width $extra-large-screen-min-width);
+$extra-large-screen-up: new-breakpoint(min-width $mega-large-screen-min-width);
+$extra-large-screen-down: new-breakpoint(max-width $extra-large-screen-max-width);

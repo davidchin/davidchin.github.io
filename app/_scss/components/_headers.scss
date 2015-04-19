@@ -5,7 +5,7 @@
 }
 
 .global-header__container {
-  @include outer-container;
+  @include page-container;
   position: relative;
   padding-bottom: rem(20);
   border-bottom: 1px solid $base-border-color;
@@ -62,7 +62,7 @@
 }
 
 .page-header__container {
-  @include outer-container;
+  @include page-container;
   padding: rem(70) 0;
   position: relative;
 }

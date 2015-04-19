@@ -4,12 +4,12 @@
 }
 
 .recent-articles-section__container {
-  @include outer-container;
+  @include page-container;
   padding: rem(60);
 }
 
 .recent-articles-group {
-  @include outer-container;
+  @include page-container;
 }
 
 .recent-articles-section__action {

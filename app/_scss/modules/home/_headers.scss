@@ -13,7 +13,7 @@
 }
 
 .hero-header__container {
-  @include outer-container;
+  @include page-container;
   padding-top: rem(100);
   padding-bottom: rem(100);
 }
@@ -26,8 +26,12 @@
 }
 
 .hero-header__title {
-  @include logo(700px, 91px);
   margin-bottom: rem(20);
+}
+
+.hero-header__logo {
+  max-width: 700px;
+  width: 100%;
 }
 
 .hero-header__subtitle {

@@ -33,3 +33,18 @@
     bottom: 0;
   }
 }
+
+@mixin page-container {
+  @include outer-container;
+
+  $large-page-container-padding: rem(30);
+  $small-page-container-padding: rem(20);
+
+  @include media(new-breakpoint(max-width ($large-screen-max-width + $large-page-container-padding * 2))) {
+    padding: $large-page-container-padding;
+  }
+
+  @include media($medium-screen-down) {
+    padding: $small-page-container-padding;
+  }
+}

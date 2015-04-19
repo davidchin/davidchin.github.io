@@ -5,7 +5,7 @@
 }
 
 .global-footer__container {
-  @include outer-container;
+  @include page-container;
   padding-bottom: rem(30);
 }
 
@@ -19,6 +19,7 @@
   }
 }
 
+// ----
 // Contact footer
 .contact-footer {
   background: $dark-gray;
@@ -31,7 +32,7 @@
 }
 
 .contact-footer__container {
-  @include outer-container;
+  @include page-container;
 
   &:first-child {
     padding-top: rem(60);
