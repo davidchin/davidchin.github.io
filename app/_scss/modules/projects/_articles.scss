@@ -1,6 +1,14 @@
+.page-content--project {
+  max-width: none;
+}
+
 .project-article-section {
-  @include article-section;
+  @include article-section(true);
   overflow: hidden;
+}
+
+.project-article-section__container {
+  @include outer-container;
 }
 
 .project-article-section__body {

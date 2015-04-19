@@ -1,7 +1,10 @@
-@mixin article-section {
-  @include outer-container;
+@mixin article-section($full-width: false) {
   padding: 80px 0;
   border-bottom: 1px solid $light-border-color;
+
+  @unless $full-width {
+    @include outer-container;
+  }
 
   p:last-child {
     margin-bottom: 0;

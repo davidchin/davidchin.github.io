@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 footer: contact
 browser_title: 12WBT | Project
 title: Michelle Bridges 12 Week Body Transformation
@@ -9,108 +9,116 @@ accessory_url: //redant.com.au
 ---
 
 <div class="project-article-section">
-  <div class="project-article-section__body">
-    <h2>
-      Background
-    </h2>
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        Background
+      </h2>
 
-    <p>
-      Michelle Bridges 12 Week Body Transformation (12WBT) is a subscription-based digital product designed to help people reach their fitness goals, such as losing weight. Members are encouraged to track and share their progress while they follow their program. I was part of an agile team responsible for implementing and maintaining membership features of their website.
-    </p>
+      <p>
+        Michelle Bridges 12 Week Body Transformation (12WBT) is a subscription-based digital product designed to help people reach their fitness goals, such as losing weight. Members are encouraged to track and share their progress while they follow their program. I was part of an agile team responsible for implementing and maintaining membership features of their website.
+      </p>
 
-    <p>
-      We used AngularJS to structure and modularise our front-end code, which communicated with a RESTful API built with Rails. Working with a UX team, we iterated based on real user feedback and continually improved the product.
-    </p>
-  </div>
+      <p>
+        We used AngularJS to structure and modularise our front-end code, which communicated with a RESTful API built with Rails. Working with a UX team, we iterated based on real user feedback and continually improved the product.
+      </p>
+    </div>
 
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
+    <div class="project-article-section__aside">
       <img data-src="/img/projects/12wbt/dashboard.jpg" class="project-article-section__image lazyload"/>
-    </figure>
+    </div>
   </div>
 </div>
 
 <div class="project-article-section">
-  <div class="project-article-section__body">
-    <h2>
-      API-Driven
-    </h2>
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        API-Driven
+      </h2>
 
-    <p>
-      Members are able to customise their nutrition and workout plans based on their weight and fitness goals. As plans are highly customisable, we needed to make sure that, we were sending the correct parameters when we queried the API.
-    </p>
+      <p>
+        Members are able to customise their nutrition and workout plans based on their weight and fitness goals. As plans are highly customisable, we needed to make sure that, we were sending the correct parameters when we queried the API.
+      </p>
 
-    <p>
-      As personalised contents are difficult to cache in the backend, we consciously tried to sidestep the cache-expiry problem and relied on the front-end to intepret the data. This meant making asynchronous API calls to fetch different models, applying business logic to JSON responses and presenting the data according to design. This approach gave us freedom to iterate the design, as API was decoupled with views.
-    </p>
-  </div>
+      <p>
+        As personalised contents are difficult to cache in the backend, we consciously tried to sidestep the cache-expiry problem and relied on the front-end to intepret the data. This meant making asynchronous API calls to fetch different models, applying business logic to JSON responses and presenting the data according to design. This approach gave us freedom to iterate the design, as API was decoupled with views.
+      </p>
+    </div>
 
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of meal plan / recipe]]
-    </figure>
-  </div>
-</div>
-
-<div class="project-article-section">
-  <div class="project-article-section__body">
-    <h2>
-      Caching strategies
-    </h2>
-
-    <p>
-      We employed several layers of caching, making sure responses were aggressively cached in Redis, and E-tags were generated so that HTTP caching could kick in. We also used LocalStorage to cache data that was expensive to regenerate.
-    </p>
-
-    <p>
-      As our application logic was highly asynchronous, we used $q promises extensively to improve the readability of our code (to avoid callback hell), and ensure errors could be caught or rethrown neatly.
-    </p>
-  </div>
-
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of mystats]]
-    </figure>
+    <div class="project-article-section__aside">
+      <figure class="project-article-section__figure">
+        [[Image of meal plan / recipe]]
+      </figure>
+    </div>
   </div>
 </div>
 
 <div class="project-article-section">
-  <div class="project-article-section__body">
-    <h2>
-      User input &amp; validation
-    </h2>
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        Caching strategies
+      </h2>
 
-    <p>
-      Members can track a variety of different things, a meal, a workout, hours slept, water intake, mindset, weight, measurement, fitness test etc... They all varied in format and required different UI and interactions. Therefore, we had to pay extra attention when validating user input.
-    </p>
+      <p>
+        We employed several layers of caching, making sure responses were aggressively cached in Redis, and E-tags were generated so that HTTP caching could kick in. We also used LocalStorage to cache data that was expensive to regenerate.
+      </p>
 
-    <p>
-      To keep our controllers skinny and DRY, we delegated the responsibility of validating and normalising user input to a set of custom directives. Also, we defined the business logic in our models and/or injectable services so that they were not coupled with a particular controller. This allowed us to implement UIs that allowed users to track anything anywhere.
-    </p>
-  </div>
+      <p>
+        As our application logic was highly asynchronous, we used $q promises extensively to improve the readability of our code (to avoid callback hell), and ensure errors could be caught or rethrown neatly.
+      </p>
+    </div>
 
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of tracker - desktop / mobile]]
-    </figure>
+    <div class="project-article-section__aside">
+      <figure class="project-article-section__figure">
+        [[Image of mystats]]
+      </figure>
+    </div>
   </div>
 </div>
 
 <div class="project-article-section">
-  <div class="project-article-section__body">
-    <h2>
-      Unit &amp; E2E testing
-    </h2>
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        User input &amp; validation
+      </h2>
 
-    <p>
-      To ensure that each release was well tested, we used Travis to streamline our Continuous Integration workflow. We used Jasmine to describe our unit tests, focusing on testing the expected behaviours of classes and functions. We stubbed out HTTP requests with mock responses to make sure tests were self-contained and repeatable. We aimed to write tests that were not brittle and useful in preventing regression.
-    </p>
+      <p>
+        Members can track a variety of different things, a meal, a workout, hours slept, water intake, mindset, weight, measurement, fitness test etc... They all varied in format and required different UI and interactions. Therefore, we had to pay extra attention when validating user input.
+      </p>
+
+      <p>
+        To keep our controllers skinny and DRY, we delegated the responsibility of validating and normalising user input to a set of custom directives. Also, we defined the business logic in our models and/or injectable services so that they were not coupled with a particular controller. This allowed us to implement UIs that allowed users to track anything anywhere.
+      </p>
+    </div>
+
+    <div class="project-article-section__aside">
+      <figure class="project-article-section__figure">
+        [[Image of tracker - desktop / mobile]]
+      </figure>
+    </div>
   </div>
+</div>
 
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of forum]]
-    </figure>
+<div class="project-article-section">
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        Unit &amp; E2E testing
+      </h2>
+
+      <p>
+        To ensure that each release was well tested, we used Travis to streamline our Continuous Integration workflow. We used Jasmine to describe our unit tests, focusing on testing the expected behaviours of classes and functions. We stubbed out HTTP requests with mock responses to make sure tests were self-contained and repeatable. We aimed to write tests that were not brittle and useful in preventing regression.
+      </p>
+    </div>
+
+    <div class="project-article-section__aside">
+      <figure class="project-article-section__figure">
+        [[Image of forum]]
+      </figure>
+    </div>
   </div>
 </div>
 
