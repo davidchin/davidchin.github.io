@@ -18,6 +18,10 @@ accessory_url: //redant.com.au
       <p>
         12WBT Daily is a native iOS app designed to help members follow their fitness and nutrition programs on-the-go. It allows them to track their daily calorie consumption and expenditure, also allowing them to access their daily workout and meal plans via a touch-friendly interface. I was part of an agile team involved in the conception and implementation of the app.
       </p>
+
+      <p>
+        Initially the client had a PhoneGap application which was slow and only functioned as a wrapper for the website. Understandably, they wanted it to run fast and smooth - so we decided to rebuild it natively using Swift.
+      </p>
     </div>
 
     <div class="project-article-section__aside">
@@ -34,21 +38,16 @@ accessory_url: //redant.com.au
       </h2>
 
       <p>
-        Initially the client had a PhoneGap application which was slow and only functioned as a wrapper for the website. Understandably, they wanted it to run fast and smooth - so we decided to rebuild it natively using Swift.
-      </p>
-
-      <p>
         As the application is API-driven, we needed to find a way to make sure network latency does not affect the perception of speed when fetching and writing data, as users could be at a gym with poor mobile reception or completely offline.
       </p>
 
       <p>
-        We ended up using NSURLCache to cache JSON responses, and simultaneously imported them into Core Data so that they could be manipulated as NSManagedObjects. The application handled various failure/conflict scenarios so that your data was automatically synced with API when possible. Stale caches were flushed by checking the relevant HTTP headers. Assets were also cached on disk and in memory so that they could be retrieved quickly.
+        We ended up using NSURLCache to cache JSON responses, and simultaneously imported them into Core Data so that they could be manipulated as NSManagedObjects. The application handled various failure/conflict scenarios so that your data is automatically synced with API when possible. Stale caches were flushed by checking the relevant HTTP headers. Assets were also cached on disk and in memory so that they could be retrieved quickly.
       </p>
     </div>
 
     <div class="project-article-section__aside">
-      <!-- Image of tracker / recipe -->
-      <img data-src="/img/projects/12wbt-daily/day.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+      <img data-src="/img/projects/12wbt-daily/meal.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
     </div>
   </div>
 </div>
@@ -65,7 +64,25 @@ accessory_url: //redant.com.au
       </p>
 
       <p>
-        The day view acts as the central navigation hub, allowing users to drill deep and interact with their content. It required some ViewControllers to be pushed into the navigation stack, others to be presented modally. We decided to use the composite and delegate pattern to structure our code and separate concerns, so that various design requirements could be fulfilled and changes in the future do not require a major refactor.
+        The day view acts as the central navigation hub, allowing users to drill deep and interact with their content. It required some ViewControllers to be pushed into the navigation stack, others to be presented modally.
+      </p>
+    </div>
+
+    <div class="project-article-section__aside">
+      <img data-src="/img/projects/12wbt-daily/profile.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+    </div>
+  </div>
+</div>
+
+<div class="project-article-section">
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        Code structure
+      </h2>
+
+      <p>
+        We decided to use the composite and delegate pattern to structure our code and separate concerns, so that various design requirements could be fulfilled and changes in the future do not require a major refactor.
       </p>
 
       <p>
@@ -74,8 +91,7 @@ accessory_url: //redant.com.au
     </div>
 
     <div class="project-article-section__aside">
-      <!-- Image of overview -->
-      <img data-src="/img/projects/12wbt-daily/day.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+      <img data-src="/img/projects/12wbt-daily/workout.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
     </div>
   </div>
 </div>
@@ -93,8 +109,7 @@ accessory_url: //redant.com.au
     </div>
 
     <div class="project-article-section__aside">
-      <!-- Image of workout -->
-      <img data-src="/img/projects/12wbt-daily/day.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+      <img data-src="/img/projects/12wbt-daily/track-meal.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
     </div>
   </div>
 </div>

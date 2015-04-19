@@ -15,6 +15,11 @@
   @include span-columns(6);
 }
 
+.project-article-section__body--padded {
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+}
+
 .project-article-section__aside {
   @include span-columns(6);
   position: relative;
@@ -34,7 +39,9 @@
 }
 
 .project-article-section__image--small {
-  width: 480px;
+  width: 380px;
+  margin-left: -380px * 0.5;
+  left: 50%;
 }
 
 .project-article-section--center {
