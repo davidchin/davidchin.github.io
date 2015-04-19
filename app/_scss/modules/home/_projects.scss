@@ -106,6 +106,10 @@
   box-shadow: 0 5px 40px transparentize($black, 0.8);
 }
 
+.featured-project-section__image--small {
+  width: 480px;
+}
+
 // Minor
 .minor-projects-group__container {
   @include outer-container;
@@ -122,16 +126,17 @@
   font-size: rem(30);
   margin-bottom: rem(5);
 }
-.minor-project-section__image {
+.minor-project-section__figure {
   display: block;
   height: 250px;
   line-height: 250px;
+  overflow: hidden;
   background: $light-gray;
   text-align: center;
   margin-bottom: $base-spacing;
 }
 
-.minor-project-section__image-caption {
+.minor-project-section__figure-caption {
   display: inline-block;
   text-transform: uppercase;
   font-size: rem(30);
