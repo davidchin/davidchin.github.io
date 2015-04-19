@@ -51,8 +51,10 @@
 
 .featured-project-section__container {
   @include outer-container;
+  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
+  z-index: 1;
 }
 
 .featured-project-section__title {
@@ -94,6 +96,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 0;
   overflow: hidden;
 }
 
