@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 footer: contact
 browser_title: 12WBT Daily | Project
 title: 12WBT Daily
@@ -9,90 +9,93 @@ accessory_url: //redant.com.au
 ---
 
 <div class="project-article-section">
-  <h2>
-    Background
-  </h2>
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        Background
+      </h2>
 
-  <div class="project-article-section__body">
-    <p>
-      12WBT Daily is a native iOS app designed to help members follow their fitness and nutrition programs on-the-go. It allows them to track their daily calorie consumption and expenditure, also allowing them to access their daily workout and meal plans via a touch-friendly interface. I was part of an agile team involved in the conception and implementation of the app.
-    </p>
-  </div>
+      <p>
+        12WBT Daily is a native iOS app designed to help members follow their fitness and nutrition programs on-the-go. It allows them to track their daily calorie consumption and expenditure, also allowing them to access their daily workout and meal plans via a touch-friendly interface. I was part of an agile team involved in the conception and implementation of the app.
+      </p>
+    </div>
 
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of day view]]
-    </figure>
-  </div>
-</div>
-
-<div class="project-article-section">
-  <h2>
-    Network latency
-  </h2>
-
-  <div class="project-article-section__body">
-    <p>
-      Initially the client had a PhoneGap application which was slow and only functioned as a wrapper for the website. Understandably, they wanted it to run fast and smooth - so we decided to rebuild it natively using Swift.
-    </p>
-
-    <p>
-      As the application is API-driven, we needed to find a way to make sure network latency does not affect the perception of speed when fetching and writing data, as users could be at a gym with poor mobile reception or completely offline.
-    </p>
-
-    <p>
-      We ended up using NSURLCache to cache JSON responses, and simultaneously imported them into Core Data so that they could be manipulated as NSManagedObjects. The application handled various failure/conflict scenarios so that your data was automatically synced with API when possible. Stale caches were flushed by checking the relevant HTTP headers. Assets were also cached on disk and in memory so that they could be retrieved quickly.
-    </p>
-  </div>
-
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of tracker / recipe]]
-    </figure>
+    <div class="project-article-section__aside">
+      <img data-src="/img/projects/12wbt-daily/day.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+    </div>
   </div>
 </div>
 
 <div class="project-article-section">
-  <h2>
-    UI performance
-  </h2>
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        Network latency
+      </h2>
 
-  <div class="project-article-section__body">
-    <p>
-      The core UI allows the user to swipe horizontally between different days. Each day or screen could also be swiped vertically to reveal different nutritional and fitness recommendations. We used a combination of UIPageViewController and UICollectionView to ensure views are recycled and memory was allocated correctly.
-    </p>
+      <p>
+        Initially the client had a PhoneGap application which was slow and only functioned as a wrapper for the website. Understandably, they wanted it to run fast and smooth - so we decided to rebuild it natively using Swift.
+      </p>
 
-    <p>
-      The day view acts as the central navigation hub, allowing users to drill deep and interact with their content. It required some ViewControllers to be pushed into the navigation stack, others to be presented modally. We decided to use the composite and delegate pattern to structure our code and separate concerns, so that various design requirements could be fulfilled and changes in the future do not require a major refactor.
-    </p>
+      <p>
+        As the application is API-driven, we needed to find a way to make sure network latency does not affect the perception of speed when fetching and writing data, as users could be at a gym with poor mobile reception or completely offline.
+      </p>
 
-    <p>
-      Business and data manipulation logic was largely handled in model classes. This allowed us to easily query data and display it in different format - for example, the summary view displayed a member’s fitness data as an average, but in the detail view, the same data needed to be displayed as a Before and After table.
-    </p>
-  </div>
+      <p>
+        We ended up using NSURLCache to cache JSON responses, and simultaneously imported them into Core Data so that they could be manipulated as NSManagedObjects. The application handled various failure/conflict scenarios so that your data was automatically synced with API when possible. Stale caches were flushed by checking the relevant HTTP headers. Assets were also cached on disk and in memory so that they could be retrieved quickly.
+      </p>
+    </div>
 
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of overview]]
-    </figure>
+    <div class="project-article-section__aside">
+      <!-- Image of tracker / recipe -->
+      <img data-src="/img/projects/12wbt-daily/day.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+    </div>
   </div>
 </div>
 
 <div class="project-article-section">
-  <h2>
-    BDD testing
-  </h2>
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        UI performance
+      </h2>
 
-  <div class="project-article-section__body">
-    <p>
-      Coming from JavaScript and Ruby development background, we always like to use BDD testing frameworks to describe our tests, such as Jasmine and RSpec. Therefore, we decided to use Quick/Nimble instead of XCTest. It helped us to focus on identifying expected behaviours and contexts instead of testing implementation details.
-    </p>
+      <p>
+        The core UI allows the user to swipe horizontally between different days. Each day or screen could also be swiped vertically to reveal different nutritional and fitness recommendations. We used a combination of UIPageViewController and UICollectionView to ensure views are recycled and memory was allocated correctly.
+      </p>
+
+      <p>
+        The day view acts as the central navigation hub, allowing users to drill deep and interact with their content. It required some ViewControllers to be pushed into the navigation stack, others to be presented modally. We decided to use the composite and delegate pattern to structure our code and separate concerns, so that various design requirements could be fulfilled and changes in the future do not require a major refactor.
+      </p>
+
+      <p>
+        Business and data manipulation logic was largely handled in model classes. This allowed us to easily query data and display it in different format - for example, the summary view displayed a member’s fitness data as an average, but in the detail view, the same data needed to be displayed as a Before and After table.
+      </p>
+    </div>
+
+    <div class="project-article-section__aside">
+      <!-- Image of overview -->
+      <img data-src="/img/projects/12wbt-daily/day.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+    </div>
   </div>
+</div>
 
-  <div class="project-article-section__aside">
-    <figure class="project-article-section__figure">
-      [[Image of workout]]
-    </figure>
+<div class="project-article-section">
+  <div class="project-article-section__container">
+    <div class="project-article-section__body">
+      <h2>
+        BDD testing
+      </h2>
+
+      <p>
+        Coming from JavaScript and Ruby development background, we always like to use BDD testing frameworks to describe our tests, such as Jasmine and RSpec. Therefore, we decided to use Quick/Nimble instead of XCTest. It helped us to focus on identifying expected behaviours and contexts instead of testing implementation details.
+      </p>
+    </div>
+
+    <div class="project-article-section__aside">
+      <!-- Image of workout -->
+      <img data-src="/img/projects/12wbt-daily/day.jpg" class="project-article-section__image project-article-section__image--small lazyload"/>
+    </div>
   </div>
 </div>
 
