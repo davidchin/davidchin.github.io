@@ -3,10 +3,6 @@
   padding: 0;
   background: $light-gray;
 
-  .global-navigation {
-    visibility: hidden;
-  }
-
   .navicon-button {
     position: absolute;
     top: -1px;
@@ -30,21 +26,6 @@
   &:hover {
     color: $black;
   }
-}
-
-.global-navigation {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: -10px;
-}
-
-.navicon-button {
-  border: 1px solid $base-border-color;
-  font-size: rem(30);
-  padding: 0;
-  height: 57px;
-  width: 57px;
 }
 
 // -----
@@ -86,7 +67,7 @@
 
 @include media($medium-screen-up) {
   .global-header {
-    .global-navigation {
+    .global-navigation__menu {
       visibility: visible;
     }
 

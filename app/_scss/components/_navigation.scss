@@ -1,27 +1,97 @@
+// -----
+// Navigation
 .global-navigation {
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
   text-transform: uppercase;
   padding: rem(15) 0;
   font-size: $base-font-size;
+}
 
-  > ul > li {
+.global-header .global-navigation--active,
+.global-navigation--active {
+  .navicon-button {
+    background: $black;
+    color: $white;
+    border-color: $black;
+    z-index: 1;
+  }
+
+  .navicon-button__icon:before {
+    content: $ionicon-var-ios-close-empty;
+  }
+
+  .global-navigation__menu {
+    left: 0;
+    right: 0;
+  }
+}
+
+.global-header {
+  .global-navigation__menu {
+    @include transition(left 0.3s ease-in-out);
+    position: absolute;
+    height: 56px;
+    top: 0;
+    left: 100%;
+    right: 0;
+    overflow: hidden;
+    background: $black;
+    text-align: left;
+    padding-left: rem(10);
+
+    a {
+      @extend %link-light;
+    }
+  }
+}
+
+.global-navigation__menu {
+  > li {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 rem(10);
   }
 
   a {
-    color: $base-font-color;
+    @extend %link-dark;
     font-weight: bold;
-
-    &:hover {
-      color: $action-color;
-    }
   }
 }
 
 @include media($medium-screen-up) {
   .global-navigation {
-    font-size: rem(20);
+    font-size: $large-font-size;
   }
+
+  .global-header {
+    .global-navigation__menu {
+      background: none;
+      text-align: right;
+      padding: 0 $base-spacing;
+      left: auto;
+      right: rem(-10);
+
+      a {
+        color: $base-font-color;
+      }
+    }
+  }
+}
+
+// -----
+// Navicon
+.navicon-button {
+  border: 1px solid $base-border-color;
+  font-size: rem(30);
+  padding: 0;
+  height: 57px;
+  width: 57px;
 }
 
 // -----

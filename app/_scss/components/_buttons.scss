@@ -18,7 +18,7 @@
   color: $light-font-color;
 
   &:hover {
-    color: darken($light-font-color, 15%);
+    color: $action-color;
   }
 }
 
@@ -27,6 +27,6 @@
   color: $base-font-color;
 
   &:hover {
-    color: lighten($light-font-color, 15%);
+    color: $action-color;
   }
 }

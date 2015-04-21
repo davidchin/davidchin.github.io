@@ -21,7 +21,7 @@
   }
 
   @include media($medium-screen-up) {
-    padding: rem(60) 0;
+    padding: $large-spacing 0;
   }
 }
 

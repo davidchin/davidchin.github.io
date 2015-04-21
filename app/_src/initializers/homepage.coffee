@@ -1,4 +1,4 @@
-$(document).ready ->
+$ ->
   html = $('body, html')
   homepage = $("#homepage")
 

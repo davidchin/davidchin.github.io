@@ -17,6 +17,18 @@
     font-weight: $bold-font-weight;
   }
 
+  @include media($medium-screen-up) {
+    @if $level == 1 {
+      font-size: rem(62);
+    } @else if $level == 2 {
+      font-size: rem(41);
+    } @else if $level == 3 {
+      font-size: rem(34);
+    } @else if $level == 4 {
+      font-size: rem(21);
+    }
+  }
+
   @include media($large-screen-up) {
     @if $level == 1 {
       font-size: rem(75);
