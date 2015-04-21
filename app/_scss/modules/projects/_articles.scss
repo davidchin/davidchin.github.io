@@ -7,14 +7,24 @@
 .project-article-section {
   @include article-section(true);
   overflow: hidden;
+  position: relative;
 }
 
 .project-article-section__container {
   @include page-container;
 }
 
+.project-article-section__container {
+  position: relative;
+  z-index: 1;
+}
+
 .project-article-section__body {
-  @include span-columns(6);
+  margin-top: $small-spacing;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .project-article-section__body--padded {
@@ -23,7 +33,6 @@
 }
 
 .project-article-section__aside {
-  @include span-columns(6);
   position: relative;
 }
 
@@ -50,4 +59,92 @@
   text-align: center;
   padding-left: rem(80);
   padding-right: rem(80);
+}
+
+@include media($medium-screen-up) {
+  .project-article-section__body,
+  .project-article-section__aside {
+    @include span-columns(6);
+  }
+
+  .project-article-section__body {
+    margin-top: 0;
+
+    h2 {
+      text-align: left;
+    }
+  }
+}
+
+// -----
+// Project image background
+.project-image-background__figure {
+  @include vertical-gradient-mask($white);
+  height: 300px;
+  padding: 0 $base-spacing;
+}
+
+.project-image-background {
+  z-index: 0;
+  overflow: hidden;
+
+  .project-image-background__container {
+    padding: 0;
+  }
+}
+
+.project-image-background__container {
+  @include page-container;
+  position: relative;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+  z-index: 1;
+}
+
+.project-image-background__figure {
+  position: relative;
+  min-height: 1px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.project-image-background__image {
+  display: inline-block;
+  box-shadow: $image-box-shadow;
+}
+
+
+.project-image-background__image--small {
+  width: 300px;
+}
+
+@include media($medium-screen-up) {
+  .project-image-background,
+  .project-image-background__image {
+    position: absolute;
+  }
+
+  .project-image-background {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .project-image-background__figure {
+    height: auto;
+    padding: 0;
+    text-align: left;
+
+    &:after {
+      visibility: hidden;
+    }
+  }
+
+  .project-image-background__image--small {
+    width: 400px;
+  }
 }

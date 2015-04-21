@@ -5,11 +5,13 @@
   margin: 0 0 $base-spacing;
 
   @if $level == 1 {
-    font-size: rem(60);
+    font-size: rem(50);
   } @else if $level == 2 {
-    font-size: rem(40);
+    font-size: rem(32);
   } @else if $level == 3 {
-    font-size: rem(25);
+    font-size: rem(22);
+  } @else if $level == 4 {
+    font-size: rem(18);
   } @else {
     font-size: $base-font-size;
     font-weight: $bold-font-weight;
@@ -22,6 +24,8 @@
       font-size: rem(50);
     } @else if $level == 3 {
       font-size: rem(30);
+    } @else if $level == 4 {
+      font-size: rem(25);
     }
   }
 }

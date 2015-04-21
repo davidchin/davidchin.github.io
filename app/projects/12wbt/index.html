@@ -2,13 +2,23 @@
 layout: project
 footer: contact
 browser_title: 12WBT | Project
-title: Michelle Bridges 12 Week Body Transformation
+title: Michelle Bridges 12WBT
 subtitle: Subscription-based online fitness &amp; nutrition program
 accessory_title: Red Ant Project
 accessory_url: //redant.com.au
 ---
 
 <div class="project-article-section">
+  <!-- Background -->
+  <div class="project-image-background">
+    <div class="project-image-background__container">
+      <div class="project-image-background__figure">
+        <img data-src="/img/projects/12wbt/dashboard.jpg" class="project-image-background__image lazyload"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
   <div class="project-article-section__container">
     <div class="project-article-section__body">
       <h2>
@@ -23,14 +33,20 @@ accessory_url: //redant.com.au
         We used AngularJS to structure and modularise our front-end code, which communicated with a RESTful API built with Rails. Working with a UX team, we iterated based on real user feedback and continually improved the product.
       </p>
     </div>
-
-    <div class="project-article-section__aside">
-      <img data-src="/img/projects/12wbt/dashboard.jpg" class="project-article-section__image lazyload"/>
-    </div>
   </div>
 </div>
 
 <div class="project-article-section">
+  <!-- Background -->
+  <div class="project-image-background">
+    <div class="project-image-background__container">
+      <div class="project-image-background__figure">
+        <img data-src="/img/projects/12wbt/meal-plan.jpg" class="project-image-background__image lazyload"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
   <div class="project-article-section__container">
     <div class="project-article-section__body">
       <h2>
@@ -45,14 +61,20 @@ accessory_url: //redant.com.au
         As personalised contents are difficult to cache in the backend, we consciously tried to sidestep the cache-expiry problem and relied on the front-end to intepret the data. This meant making asynchronous API calls to fetch different models, applying business logic to JSON responses and presenting the data according to design. This approach gave us freedom to iterate the design, as API was decoupled with views.
       </p>
     </div>
-
-    <div class="project-article-section__aside">
-      <img data-src="/img/projects/12wbt/meal-plan.jpg" class="project-article-section__image lazyload"/>
-    </div>
   </div>
 </div>
 
 <div class="project-article-section">
+  <!-- Background -->
+  <div class="project-image-background">
+    <div class="project-image-background__container">
+      <div class="project-image-background__figure">
+        <img data-src="/img/projects/12wbt/mystats.jpg" class="project-image-background__image lazyload"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
   <div class="project-article-section__container">
     <div class="project-article-section__body">
       <h2>
@@ -67,14 +89,20 @@ accessory_url: //redant.com.au
         As our application logic was highly asynchronous, we used $q promises extensively to improve the readability of our code (to avoid callback hell), and ensure errors could be caught or rethrown neatly.
       </p>
     </div>
-
-    <div class="project-article-section__aside">
-      <img data-src="/img/projects/12wbt/mystats.jpg" class="project-article-section__image lazyload"/>
-    </div>
   </div>
 </div>
 
 <div class="project-article-section">
+  <!-- Background -->
+  <div class="project-image-background">
+    <div class="project-image-background__container">
+      <div class="project-image-background__figure">
+        <img data-src="/img/projects/12wbt/tracker.jpg" class="project-image-background__image lazyload"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
   <div class="project-article-section__container">
     <div class="project-article-section__body">
       <h2>
@@ -89,14 +117,20 @@ accessory_url: //redant.com.au
         To keep our controllers skinny and DRY, we delegated the responsibility of validating and normalising user input to a set of custom directives. Also, we defined the business logic in our models and/or injectable services so that they were not coupled with a particular controller. This allowed us to implement UIs that allowed users to track anything anywhere.
       </p>
     </div>
-
-    <div class="project-article-section__aside">
-      <img data-src="/img/projects/12wbt/tracker.jpg" class="project-article-section__image lazyload"/>
-    </div>
   </div>
 </div>
 
 <div class="project-article-section">
+  <!-- Background -->
+  <div class="project-image-background">
+    <div class="project-image-background__container">
+      <div class="project-image-background__figure">
+        <img data-src="/img/projects/12wbt/forum.jpg" class="project-image-background__image lazyload"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
   <div class="project-article-section__container">
     <div class="project-article-section__body">
       <h2>
@@ -106,10 +140,6 @@ accessory_url: //redant.com.au
       <p>
         To ensure that each release was well tested, we used Travis to streamline our Continuous Integration workflow. We used Jasmine to describe our unit tests, focusing on testing the expected behaviours of classes and functions. We stubbed out HTTP requests with mock responses to make sure tests were self-contained and repeatable. We aimed to write tests that were not brittle and useful in preventing regression.
       </p>
-    </div>
-
-    <div class="project-article-section__aside">
-      <img data-src="/img/projects/12wbt/forum.jpg" class="project-article-section__image lazyload"/>
     </div>
   </div>
 </div>

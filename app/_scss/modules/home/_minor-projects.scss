@@ -1,0 +1,65 @@
+// -----
+// Minor
+.minor-projects-group {
+  border-bottom: $base-border;
+}
+
+.minor-projects-group__container {
+  @include page-container;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+}
+
+.minor-projects-group__title {
+  @include heading-font(2);
+  text-align: center;
+}
+
+.minor-project-section {
+  font-size: $small-font-size;
+  text-align: center;
+  margin-bottom: $large-spacing;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.minor-project-section__title {
+  font-size: rem(30);
+  margin-bottom: rem(5);
+}
+
+.minor-project-section__figure {
+  height: 250px;
+  max-width: 300px;
+  overflow: hidden;
+  background: $light-gray;
+  margin: 0 auto $base-spacing;
+}
+
+.minor-project-section__figure-caption {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: rem(30);
+  font-weight: $thin-font-weight;
+  line-height: $base-line-height;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.minor-project-section__action {
+  margin-top: $base-spacing;
+}
+
+@include media($medium-screen-up) {
+  .minor-project-section {
+    @include span-columns(4);
+    text-align: left;
+  }
+
+  .minor-project-section__figure {
+    height: 250px;
+    max-width: none;
+  }
+}

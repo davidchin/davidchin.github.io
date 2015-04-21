@@ -1,14 +1,25 @@
 // Global header
 .global-header {
-  padding: $base-spacing 0 0;
+  padding: 0;
   background: $light-gray;
+
+  .global-navigation {
+    visibility: hidden;
+  }
+
+  .navicon-button {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+  }
 }
 
 .global-header__container {
   @include page-container;
   position: relative;
-  padding-bottom: rem(20);
   border-bottom: 1px solid $base-border-color;
+  height: 56px;
+  line-height: 56px;
 }
 
 .global-header__logo {
@@ -26,6 +37,14 @@
   position: absolute;
   right: 0;
   top: -10px;
+}
+
+.navicon-button {
+  border: 1px solid $base-border-color;
+  font-size: rem(30);
+  padding: 0;
+  height: 57px;
+  width: 57px;
 }
 
 // -----
@@ -60,14 +79,31 @@
 
 .page-header__container {
   @include page-container;
-  padding-top: rem(70);
-  padding-bottom: rem(70);
   position: relative;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+}
+
+@include media($medium-screen-up) {
+  .global-header {
+    .global-navigation {
+      visibility: visible;
+    }
+
+    .navicon-button {
+      visibility: hidden;
+    }
+  }
 }
 
 @include media($large-screen-up) {
   .page-header__title,
   .page-header__subtitle {
     max-width: 80%;
+  }
+
+  .page-header__container {
+    padding-top: rem(70);
+    padding-bottom: rem(70);
   }
 }

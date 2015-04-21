@@ -18,8 +18,9 @@ $heading-line-height: $small-line-height;
 $ionicons-font-path: "../../_bower_components/ionicons/fonts/";
 
 // Spacing
-$base-spacing: $base-line-height * 1.1rem; // 30rem
+$base-spacing: rem(30);
 $large-spacing: $base-spacing * 2;
+$medium-spacing: rem(20);
 $small-spacing: $base-spacing / 2;
 $page-content-spacing: rem(80);
 $base-z-index: 0;

@@ -1,7 +1,12 @@
 .page-content {
   @include page-container;
-  padding-top: $page-content-spacing;
-  padding-bottom: $page-content-spacing;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+
+  @include media($medium-screen-up) {
+    padding-top: $page-content-spacing;
+    padding-bottom: $page-content-spacing;
+  }
 }
 
 .content-column {
