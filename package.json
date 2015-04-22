@@ -2,7 +2,6 @@
   "name": "davidchin",
   "private": true,
   "version": "0.0.0",
-  "description": "Yeoman workflow for davidchin",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.5",
