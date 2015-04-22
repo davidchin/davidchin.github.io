@@ -143,5 +143,7 @@
 }
 
 @include media($small-screen-up) {
-  visibility: visible;
+  #fp-nav {
+    visibility: visible;
+  }
 }

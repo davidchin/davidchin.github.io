@@ -1,11 +1,5 @@
 // -----
 // Project image background
-.project-background__figure {
-  @include vertical-gradient-mask($white);
-  height: 300px;
-  padding: 0 $base-spacing;
-}
-
 .project-background {
   z-index: 0;
   overflow: hidden;
@@ -24,11 +18,12 @@
 }
 
 .project-background__figure {
+  @include vertical-gradient-mask($white);
+  height: 300px;
+  padding: $base-spacing $base-spacing 0;
   position: relative;
   min-height: 1px;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -78,12 +73,6 @@
   .project-article-section {
     .project-background {
       padding: $large-spacing 0;
-    }
-
-    &:first-child {
-      .project-background {
-        padding-top: 0;
-      }
     }
 
     .project-background__image {

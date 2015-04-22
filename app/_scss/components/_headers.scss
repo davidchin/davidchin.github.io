@@ -76,6 +76,11 @@
       visibility: hidden;
     }
   }
+
+  .page-header__container {
+    padding-top: $large-spacing;
+    padding-bottom: $large-spacing;
+  }
 }
 
 @include media($large-screen-up) {

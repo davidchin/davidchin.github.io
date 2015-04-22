@@ -7,6 +7,7 @@
 .project-article-section {
   @include article-section(true);
   overflow: hidden;
+  padding-top: 0;
   position: relative;
 }
 
@@ -48,6 +49,11 @@
   left: 50%;
 }
 
+.project-article-section--action {
+  @include article-section(true);
+}
+
+.project-article-section--action,
 .project-article-section--center {
   text-align: center;
   padding-left: rem(80);

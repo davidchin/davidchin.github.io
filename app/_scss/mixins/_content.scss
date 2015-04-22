@@ -11,13 +11,8 @@
     margin-bottom: 0;
   }
 
-  &:first-child {
-    padding-top: 0;
-  }
-
   &:last-child {
     border-bottom: 0;
-    padding-bottom: 0;
   }
 
   @include media($medium-screen-up) {

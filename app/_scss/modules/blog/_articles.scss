@@ -1,12 +1,9 @@
 .blog-article-summary {
   border-bottom: $base-border;
-  padding-bottom: $base-spacing;
-  margin-bottom: $base-spacing;
+  padding: $base-spacing 0;
 
   &:last-child {
     border-bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
   }
 }
 
@@ -57,8 +54,8 @@
 
 @include media($medium-screen-up) {
   .blog-article-summary {
+    padding-top: $large-spacing;
     padding-bottom: $large-spacing;
-    margin-bottom: $large-spacing;
   }
 }
 

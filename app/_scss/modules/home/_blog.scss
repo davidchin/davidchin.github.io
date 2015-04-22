@@ -27,6 +27,7 @@
 
   .blog-article-summary__title {
     @include heading-font(3);
+    margin-bottom: 0;
   }
 
   .blog-article-summary__meta {
@@ -35,19 +36,12 @@
 }
 
 @include media($medium-screen-up) {
-  .recent-articles-section__title {
-    padding: $large-spacing;
-  }
-
   .recent-article-section {
     @include span-columns(6);
+    margin-top: 0;
 
-    &:nth-child(2n+1) {
+    &:nth-child(2n) {
       @include omega;
     }
-  }
-
-  .recent-articles-section__action {
-    margin-top: $base-spacing;
   }
 }
