@@ -1,4 +1,4 @@
-@mixin button {
+@mixin button($theme: clear) {
   @include appearance(none);
   background-color: transparent;
   border: 1px solid $black;
@@ -27,5 +27,31 @@
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  @if $theme == light {
+    border-color: $white;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: transparentize($white, 0.95);
+    }
+  }
+}
+
+@mixin link-color($theme: dark) {
+  @if $theme == light {
+    color: $light-font-color;
+
+    &:hover {
+      color: $action-color;
+    }
+  } @else {
+    color: $base-font-color;
+
+    &:hover {
+      color: $action-color;
+    }
   }
 }

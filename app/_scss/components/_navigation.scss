@@ -47,7 +47,7 @@
     padding-left: rem(10);
 
     a {
-      @extend %link-light;
+      @include link-color(light);
     }
   }
 }
@@ -59,7 +59,7 @@
   }
 
   a {
-    @extend %link-dark;
+    @include link-color(dark);
     font-weight: bold;
   }
 }
@@ -78,7 +78,7 @@
       right: rem(-10);
 
       a {
-        color: $base-font-color;
+        @include link-color(dark);
       }
     }
   }
@@ -110,7 +110,7 @@
   }
 
   a {
-    @extend %link-light;
+    @include link-color(light);
     font-weight: bold;
     font-size: $small-font-size;
   }
@@ -120,8 +120,14 @@
   @include page-container;
 }
 
+// -----
 // FullPage Nav
 #fp-nav {
+  visibility: hidden;
   background: transparentize($white, 0.3);
   border-radius: 14px;
+}
+
+@include media($small-screen-up) {
+  visibility: visible;
 }

@@ -52,7 +52,7 @@
 
   .button,
   button {
-    @extend %button--light;
+    @include button(light);
   }
 }
 

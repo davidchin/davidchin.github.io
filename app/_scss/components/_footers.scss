@@ -73,7 +73,7 @@
   }
 
   a {
-    @extend %link-light;
+    @include link-color(light);
   }
 }
 
