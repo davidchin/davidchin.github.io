@@ -9,15 +9,17 @@
   }
 }
 
-.content-column {
-  @include span-columns(8);
-}
-
-.aside-column {
-  @include span-columns(4);
-  @include omega();
-}
-
 .outer-container {
   @include outer-container;
+}
+
+@include media($medium-screen-up) {
+  .content-column {
+    @include span-columns(8);
+  }
+
+  .aside-column {
+    @include span-columns(4);
+    @include omega();
+  }
 }

@@ -7,10 +7,8 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
   z-index: 0;
   text-transform: uppercase;
-  padding: rem(15) 0;
   font-size: $base-font-size;
 }
 
@@ -21,6 +19,10 @@
     color: $white;
     border-color: $black;
     z-index: 1;
+
+    i {
+      @include transform(rotate(180deg));
+    }
   }
 
   .navicon-button__icon:before {
@@ -28,23 +30,25 @@
   }
 
   .global-navigation__menu {
-    left: 0;
-    right: 0;
+    @include transform(translateX(0));
   }
 }
 
 .global-header {
   .global-navigation__menu {
-    @include transition(left 0.3s ease-in-out);
+    @include transition(transform 0.3s ease-in-out);
+    @include transform(translateX(100%));
     position: absolute;
     height: 56px;
     top: 0;
-    left: 100%;
+    left: 0;
     right: 0;
     overflow: hidden;
     background: $black;
     text-align: left;
     padding-left: rem(10);
+    padding-top: 0;
+    padding-bottom: 0;
 
     a {
       @include link-color(light);
@@ -53,6 +57,8 @@
 }
 
 .global-navigation__menu {
+  padding: rem(15) 0;
+
   > li {
     display: inline-block;
     padding: 0 rem(10);
@@ -71,6 +77,7 @@
 
   .global-header {
     .global-navigation__menu {
+      @include transform(translateX(0));
       background: none;
       text-align: right;
       padding: 0 $base-spacing;
@@ -92,6 +99,13 @@
   padding: 0;
   height: 57px;
   width: 57px;
+  vertical-align: middle;
+
+  i {
+    @include transition(transform 0.3s ease-in-out);
+    display: inline-block;
+    line-height: 0;
+  }
 }
 
 // -----

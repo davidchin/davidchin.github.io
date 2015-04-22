@@ -1,5 +1,2 @@
 $ ->
-  button = $('[data-hamburger-menu]')
-  
-  button.click ->
-    button.parent().toggleClass('global-navigation--active')
+  new HamburgerMenu('#navicon-button', { activeClass: 'global-navigation--active' })

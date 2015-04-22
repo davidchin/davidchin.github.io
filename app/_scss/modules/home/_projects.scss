@@ -4,11 +4,11 @@
   position: relative;
   text-align: center;
 
-  .project-image-background {
+  .project-background {
     margin-bottom: -$base-spacing;
   }
 
-  .project-image-background__figure {
+  .project-background__figure {
     padding-top: $base-spacing;
   }
 }
@@ -16,7 +16,7 @@
 .featured-project-section--12wbt {
   background: $white;
 
-  .project-image-background__figure {
+  .project-background__figure {
     @include vertical-gradient-mask($white);
   }
 }
@@ -24,7 +24,7 @@
 .featured-project-section--12wbt-app {
   background: $blue;
 
-  .project-image-background__figure {
+  .project-background__figure {
     @include vertical-gradient-mask($blue);
   }
 }
@@ -32,7 +32,7 @@
 .featured-project-section--vibe {
   background: $dark-gray;
 
-  .project-image-background__figure {
+  .project-background__figure {
     @include vertical-gradient-mask($dark-gray);
   }
 }
@@ -40,7 +40,7 @@
 .featured-project-section--beautyheaven {
   background: $turquoise;
 
-  .project-image-background__figure {
+  .project-background__figure {
     @include vertical-gradient-mask($turquoise);
   }
 }
@@ -91,19 +91,19 @@
   .featured-project-section {
     text-align: left;
 
-    .project-image-background__figure {
+    .project-background__figure {
       @include span-columns(5);
       padding-top: $base-spacing;
     }
 
-    .project-image-background__image {
+    .project-background__image {
       margin: $base-spacing ($base-spacing * 1.5);
     }
   }
 
   .featured-project-section--12wbt,
   .featured-project-section--vibe {
-    .project-image-background__figure {
+    .project-background__figure {
       @include shift(7);
     }
   }
@@ -114,7 +114,7 @@
       @include shift(5);
     }
 
-    .project-image-background__image {
+    .project-background__image {
       right: 0;
     }
   }

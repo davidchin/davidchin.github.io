@@ -1,21 +1,21 @@
 // -----
 // Project image background
-.project-image-background__figure {
+.project-background__figure {
   @include vertical-gradient-mask($white);
   height: 300px;
   padding: 0 $base-spacing;
 }
 
-.project-image-background {
+.project-background {
   z-index: 0;
   overflow: hidden;
 
-  .project-image-background__container {
+  .project-background__container {
     padding: 0;
   }
 }
 
-.project-image-background__container {
+.project-background__container {
   @include page-container;
   position: relative;
   padding-top: $base-spacing;
@@ -23,7 +23,7 @@
   z-index: 1;
 }
 
-.project-image-background__figure {
+.project-background__figure {
   position: relative;
   min-height: 1px;
   margin-top: 0;
@@ -32,22 +32,22 @@
   text-align: center;
 }
 
-.project-image-background__image {
+.project-background__image {
   display: inline-block;
   box-shadow: $image-box-shadow;
 }
 
-.project-image-background__image--small {
+.project-background__image--small {
   width: 300px;
 }
 
 @include media($medium-screen-up) {
-  .project-image-background,
-  .project-image-background__image {
+  .project-background,
+  .project-background__image {
     position: absolute;
   }
 
-  .project-image-background {
+  .project-background {
     top: 0;
     left: 0;
     right: 0;
@@ -55,7 +55,7 @@
     margin-bottom: 0;
   }
 
-  .project-image-background__figure {
+  .project-background__figure {
     @include span-columns(6);
     height: auto;
     padding: 0;
@@ -66,31 +66,31 @@
     }
   }
 
-  .project-image-background__image {
+  .project-background__image {
     max-width: none;
     width: 680px;
   }
 
-  .project-image-background__image--small {
+  .project-background__image--small {
     width: 400px;
   }
 
   .project-article-section {
-    .project-image-background {
+    .project-background {
       padding: $large-spacing 0;
     }
 
     &:first-child {
-      .project-image-background {
+      .project-background {
         padding-top: 0;
       }
     }
 
-    .project-image-background__image {
+    .project-background__image {
       margin: 0 $base-spacing;
     }
 
-    .project-image-background__figure {
+    .project-background__figure {
       @include shift(6);
     }
   }
