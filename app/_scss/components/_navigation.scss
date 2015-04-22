@@ -19,10 +19,10 @@
     color: $white;
     border-color: $black;
     z-index: 1;
+  }
 
-    i {
-      @include transform(rotate(180deg));
-    }
+  .navicon-button__icon {
+    @include transform(rotate(180deg));
   }
 
   .navicon-button__icon:before {

@@ -1,6 +1,10 @@
+exclude:
+  - 'app/_scss/components/_syntax.scss'
+  - 'app/_bower_components/**'
+
 linters:
   SelectorFormat:
-    convention: BEM
+    convention: hyphenated_BEM
   StringQuotes:
     style: double_quotes
   LeadingZero:
