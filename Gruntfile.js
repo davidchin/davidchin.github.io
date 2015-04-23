@@ -332,23 +332,6 @@ module.exports = function (grunt) {
       ]
     },
 
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      check: {
-        src: [
-          '<%= yeoman.app %>/css/**/*.css'
-        ]
-      }
-    },
-    // https://github.com/robwierzbowski/generator-jekyllrb/issues/106
-    // scsslint: {
-    //   // See https://www.npmjs.org/package/grunt-scss-lint for options.
-    //   allFiles: [
-    //     '<%= yeoman.app %>/_scss/**/*.scss'
-    //   ]
-    // },
     concurrent: {
       server: [
         'sass:server',
@@ -395,9 +378,7 @@ module.exports = function (grunt) {
     'sass:server',
     'coffeelint:check',
     'coffee:dist',
-    'jshint:all',
-    'csslint:check'
-    // 'scsslint'
+    'jshint:all'
   ]);
 
   grunt.registerTask('build', [
