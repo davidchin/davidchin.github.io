@@ -96,10 +96,6 @@
       padding-top: $base-spacing;
     }
 
-    .project-background__image {
-      margin: $base-spacing ($base-spacing * 1.5);
-    }
-
     .project-background {
       margin-bottom: 0;
     }
@@ -130,5 +126,13 @@
 
   .featured-project-section__title {
     font-size: rem(60);
+  }
+}
+
+@include media($large-screen-up) {
+  .featured-project-section {
+    .project-background__image {
+      margin: $base-spacing ($base-spacing * 1.5);
+    }
   }
 }
