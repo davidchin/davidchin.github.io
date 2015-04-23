@@ -12,6 +12,7 @@
 module.exports = function (grunt) {
   // Show elapsed time after tasks run
   require('time-grunt')(grunt);
+
   // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
 

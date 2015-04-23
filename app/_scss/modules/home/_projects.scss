@@ -92,7 +92,7 @@
     text-align: left;
 
     .project-background__figure {
-      @include span-columns(5);
+      @include span-columns(6);
       padding-top: $base-spacing;
     }
 
@@ -108,14 +108,14 @@
   .featured-project-section--12wbt,
   .featured-project-section--vibe {
     .project-background__figure {
-      @include shift(7);
+      @include shift(6);
     }
   }
 
   .featured-project-section--12wbt-app,
   .featured-project-section--beautyheaven {
     .featured-project-section__intro {
-      @include shift(5);
+      @include shift(6);
     }
 
     .project-background__image {
@@ -124,7 +124,7 @@
   }
 
   .featured-project-section__intro {
-    @include span-columns(7);
+    @include span-columns(6);
     font-size: rem(20);
   }
 

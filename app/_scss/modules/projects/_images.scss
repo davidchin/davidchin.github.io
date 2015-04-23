@@ -28,7 +28,9 @@
 }
 
 .project-background__image {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: $image-box-shadow;
 }
 
@@ -37,12 +39,8 @@
 }
 
 @include media($medium-screen-up) {
-  .project-background,
-  .project-background__image {
-    position: absolute;
-  }
-
   .project-background {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -54,7 +52,6 @@
     @include span-columns(6);
     height: auto;
     padding: 0;
-    text-align: left;
 
     &:after {
       visibility: hidden;
@@ -75,12 +72,10 @@
       padding: $large-spacing 0;
     }
 
-    .project-background__image {
-      margin: 0 $base-spacing;
-    }
-
     .project-background__figure {
       @include shift(6);
+      padding-left: $base-spacing;
+      padding-right: $base-spacing;
     }
   }
 }
