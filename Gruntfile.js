@@ -224,8 +224,10 @@ module.exports = function (grunt) {
 
     // Usemin adds files to concat
     concat: {},
+
     // Usemin adds files to uglify
     uglify: {},
+
     // Usemin adds files to cssmin
     cssmin: {
       dist: {
@@ -261,6 +263,16 @@ module.exports = function (grunt) {
     },
 
     copy: {
+      server: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/_bower_components/ionicons/',
+          src: ['fonts/*'],
+          dest: '<%= yeoman.app %>'
+        }]
+      },
+
       dist: {
         files: [{
           expand: true,
@@ -279,6 +291,14 @@ module.exports = function (grunt) {
             //'favicon.ico',
             //'apple-touch*.png'
           ],
+          dest: '<%= yeoman.dist %>'
+        },
+
+        {
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/_bower_components/ionicons/',
+          src: ['fonts/*'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -336,6 +356,7 @@ module.exports = function (grunt) {
       server: [
         'sass:server',
         'coffee:dist',
+        'copy:server',
         'jekyll:server'
       ],
       dist: [
