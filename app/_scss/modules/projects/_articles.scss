@@ -25,11 +25,6 @@
   }
 }
 
-.project-article-section__body--padded {
-  padding-top: rem(50);
-  padding-bottom: rem(50);
-}
-
 .project-article-section__aside {
   position: relative;
 }
@@ -46,6 +41,11 @@
 }
 
 @include media($medium-screen-up) {
+  .project-article-section__body--padded {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+  }
+
   .project-article-section__body,
   .project-article-section__aside {
     @include span-columns(6);

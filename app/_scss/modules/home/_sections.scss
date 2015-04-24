@@ -1,6 +1,8 @@
 @include media(new-breakpoint(min-height rem(730))) {
-  .fp-section,
-  .fp-tableCell {
-    height: rem(730) !important;
+  .fp-section.featured-project-section {
+    &,
+    .fp-tableCell {
+      height: rem(730) !important;
+    }
   }
 }
