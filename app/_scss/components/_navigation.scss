@@ -1,4 +1,4 @@
-// -----
+// --------------------
 // Navigation
 .global-navigation {
   display: inline-block;
@@ -91,7 +91,7 @@
   }
 }
 
-// -----
+// --------------------
 // Navicon
 .navicon-button {
   border: 1px solid $base-border-color;
@@ -108,7 +108,7 @@
   }
 }
 
-// -----
+// --------------------
 // Footer
 .global-footer-navigation {
   padding: rem(40) 0;
@@ -134,7 +134,7 @@
   @include page-container;
 }
 
-// -----
+// --------------------
 // FullPage Nav
 #fp-nav {
   visibility: hidden;
