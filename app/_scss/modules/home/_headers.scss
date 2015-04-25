@@ -1,3 +1,17 @@
+@include keyframes(scroll-prompt-up-down) {
+  0% {
+    @include transform(translateY(-5px));
+  }
+
+  50% {
+    @include transform(translateY(5px));
+  }
+
+  100% {
+    @include transform(translateY(-5px));
+  }
+}
+
 .hero-header {
   background: $light-gray;
   text-align: center;
@@ -35,13 +49,13 @@
 }
 
 .hero-header__logo {
-  max-width: 700px;
+  max-width: rem(520);
   width: 100%;
 }
 
 .hero-header__subtitle {
   font-size: rem(25);
-  font-weight: $bold-font-weight;
+  font-weight: $thin-font-weight;
 }
 
 .hero-header__intro {
@@ -63,17 +77,28 @@
   max-width: none;
 }
 
+.hero-header__scroll-prompt {
+  @include animation(scroll-prompt-up-down ease-in-out infinite 1.5s);
+  position: absolute;
+  bottom: $base-spacing;
+  font-size: $large-font-size;
+}
+
 @include media($small-screen-up) {
   .hero-header__subtitle {
-    font-size: rem(40);
+    font-size: rem(30);
   }
 
   .hero-header__intro {
-    font-size: rem(34);
+    font-size: rem(30);
   }
 
   .hero-header__intro {
     margin-top: $large-spacing;
+  }
+
+  .hero-header__scroll-prompt {
+    font-size: rem(25);
   }
 }
 

@@ -44,15 +44,13 @@
 }
 
 .contact-footer__title {
-  font-size: rem(40);
-  font-weight: $thin-font-weight;
-  margin-bottom: 0.25em;
+  @include heading-font(2);
 }
 
 .contact-footer__intro {
-  @include heading-font(3);
+  @include heading-font(4);
+  line-height: $base-line-height;
   margin-bottom: 0;
-  font-weight: $thin-font-weight;
 }
 
 .contact-footer__meta {
@@ -84,12 +82,8 @@
     }
   }
 
-  .contact-footer__title {
-    font-size: rem(60);
-  }
-
   .contact-footer__intro,
   .contact-footer__aside {
-    @include span-columns(6);
+    @include span-columns(8);
   }
 }

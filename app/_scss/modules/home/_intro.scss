@@ -1,0 +1,16 @@
+.about-intro__container {
+  @include page-container;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+}
+
+.about-intro__body {
+  @include heading-font(3);
+  line-height: $base-line-height;
+}
+
+@include media($medium-screen-up) {
+  .about-intro__body {
+    @include span-columns(8);
+  }
+}

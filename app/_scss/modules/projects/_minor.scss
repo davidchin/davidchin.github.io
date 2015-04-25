@@ -12,7 +12,14 @@
 
 .minor-projects-group__title {
   @include heading-font(2);
+  margin-bottom: $small-spacing;
   text-align: center;
+}
+
+.minor-projects-group__intro {
+  @include heading-font(4);
+  text-align: center;
+  margin-bottom: $base-spacing;
 }
 
 .minor-project-section {
@@ -67,5 +74,9 @@
   .minor-project-section__figure {
     height: 250px;
     max-width: none;
+  }
+
+  .minor-projects-group__intro {
+    margin-bottom: $large-spacing;
   }
 }
