@@ -60,6 +60,10 @@
   padding-right: rem(80);
 }
 
+.project-article-section__more {
+  text-align: center;
+}
+
 @include media($medium-screen-up) {
   .project-article-section__body {
     @include shift(2);
@@ -102,6 +106,10 @@
       &:after {
         display: none;
       }
+    }
+
+    .project-article-section__more {
+      text-align: left;
     }
 
     .project-background {
