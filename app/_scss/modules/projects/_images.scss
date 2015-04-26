@@ -27,6 +27,23 @@
   text-align: center;
 }
 
+.project-background__figure--pair {
+  @include outer-container;
+
+  &:after {
+    display: block;
+  }
+
+  > div {
+    @include span-columns(6);
+    height: 100%;
+  }
+
+  .project-background__image {
+    width: 100%;
+  }
+}
+
 .project-background__image {
   display: block;
   margin-left: auto;
@@ -56,6 +73,10 @@
     &:after {
       visibility: hidden;
     }
+  }
+
+  .project-background__figure--pair {
+    width: 680px;
   }
 
   .project-background__image {
