@@ -4,6 +4,10 @@
   padding-bottom: $base-spacing;
 }
 
+.about-intro__title {
+  text-align: center;
+}
+
 .about-intro__body {
   @include heading-font(3);
   line-height: $base-line-height;
@@ -12,5 +16,6 @@
 @include media($medium-screen-up) {
   .about-intro__body {
     @include span-columns(8);
+    @include shift(2);
   }
 }

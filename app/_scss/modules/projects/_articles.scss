@@ -97,6 +97,7 @@
       @include span-columns(6);
       @include shift(6);
       height: 100%;
+      padding-top: $large-spacing;
 
       &:after {
         display: none;
