@@ -84,11 +84,6 @@
 }
 
 @include media($large-screen-up) {
-  .page-header__title,
-  .page-header__subtitle {
-    max-width: 80%;
-  }
-
   .page-header__container {
     padding-top: rem(70);
     padding-bottom: rem(70);

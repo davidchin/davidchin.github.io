@@ -1,21 +1,9 @@
-// --------------------
-// Featured
-.featured-project-section {
-  overflow: hidden;
-  position: relative;
+.project-article-section--featured {
+  border: 0;
   text-align: center;
-
-  .project-background {
-    margin-bottom: -$base-spacing;
-  }
-
-  .project-background__figure {
-    display: block;
-    padding-top: $base-spacing;
-  }
 }
 
-.featured-project-section--12wbt {
+.project-article-section--12wbt {
   background: $white;
 
   .project-background__figure {
@@ -23,7 +11,7 @@
   }
 }
 
-.featured-project-section--12wbt-app {
+.project-article-section--12wbt-app {
   background: $blue;
 
   .project-background__figure {
@@ -31,7 +19,7 @@
   }
 }
 
-.featured-project-section--vibe {
+.project-article-section--vibe {
   background: $dark-gray;
 
   .project-background__figure {
@@ -39,7 +27,7 @@
   }
 }
 
-.featured-project-section--beautyheaven {
+.project-article-section--beautyheaven {
   background: $turquoise;
 
   .project-background__figure {
@@ -47,11 +35,11 @@
   }
 }
 
-.featured-project-section--12wbt-app,
-.featured-project-section--vibe,
-.featured-project-section--beautyheaven {
+.project-article-section--12wbt-app,
+.project-article-section--vibe,
+.project-article-section--beautyheaven {
   &,
-  .featured-project-section__title a {
+  .project-article-section__title a {
     color: $white;
   }
 
@@ -61,111 +49,19 @@
   }
 }
 
-.featured-project-section__container {
-  @include page-container;
-  position: relative;
-  padding-top: $base-spacing;
-  padding-bottom: $base-spacing;
-  z-index: 1;
-}
-
-.featured-project-section__title {
-  font-size: rem(40);
-  font-weight: $thin-font-weight;
-  margin-bottom: $small-spacing;
-
-  a {
-    color: $base-font-color;
-  }
-}
-
-.featured-project-section__accessory-title {
-  text-transform: uppercase;
-  font-size: $base-font-size;
-  color: inherit;
-  font-weight: 400;
-  opacity: 0.5;
-
-  &:hover {
-    color: inherit;
-  }
-}
-
-.featured-project-section__intro {
-  font-size: $base-font-size;
-  min-height: 1px;
-}
-
 @include media($medium-screen-up) {
-  .featured-project-section {
+  .project-article-section--featured {
     text-align: left;
 
-    .project-background__figure {
-      @include span-columns(6);
-      padding-top: $base-spacing;
-    }
+    &.project-article-section--small {
+      .project-article-section__container {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+      }
 
-    .project-background {
-      margin-bottom: 0;
-    }
-  }
-
-  .featured-project-section__container {
-    padding-top: rem(150);
-    padding-bottom: rem(150);
-  }
-
-  .featured-project-section--12wbt,
-  .featured-project-section--vibe {
-    .project-background__figure {
-      @include shift(6);
-    }
-  }
-
-  .featured-project-section--12wbt-app,
-  .featured-project-section--beautyheaven {
-    .featured-project-section__intro {
-      @include shift(6);
-    }
-
-    .project-background__image {
-      right: 0;
-    }
-  }
-
-  .featured-project-section__intro {
-    @include span-columns(6);
-    font-size: rem(18);
-  }
-
-  .featured-project-section__title {
-    font-size: rem(50);
-  }
-}
-
-@include media($large-screen-up) {
-  .featured-project-section {
-    .project-background__image {
-      margin: $base-spacing ($base-spacing * 1.5);
-    }
-  }
-
-  .featured-project-section__intro {
-    font-size: rem(20);
-  }
-
-  .featured-project-section__title {
-    font-size: rem(60);
-  }
-}
-
-// --------------------
-// Fullpage
-@include media(new-breakpoint(min-height rem(730))) {
-  .fp-section.featured-project-section {
-    &,
-    .fp-tableCell {
-      height: rem(730) !important;
+      .project-background__figure:after {
+        display: none;
+      }
     }
   }
 }

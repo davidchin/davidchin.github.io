@@ -11,10 +11,12 @@
 
 .project-background__container {
   @include page-container;
+  box-sizing: border-box;
   position: relative;
   padding-top: $base-spacing;
   padding-bottom: $base-spacing;
   z-index: 1;
+  height: 100%;
 }
 
 .project-background__figure {
@@ -52,51 +54,15 @@
 }
 
 .project-background__image--small {
-  width: 300px;
+  width: 320px;
 }
 
 @include media($medium-screen-up) {
-  .project-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0;
-  }
-
   .project-background__figure {
-    @include span-columns(6);
-    height: auto;
-    padding: 0;
-
-    &:after {
-      visibility: hidden;
-    }
-  }
-
-  .project-background__figure--pair {
-    width: 680px;
-  }
-
-  .project-background__image {
-    max-width: none;
-    width: 680px;
-  }
-
-  .project-background__image--small {
-    width: 400px;
-  }
-
-  .project-article-section {
-    .project-background {
-      padding: $large-spacing 0;
-    }
-
-    .project-background__figure {
-      @include shift(6);
-      padding-left: $base-spacing;
-      padding-right: $base-spacing;
-    }
+    @include shift(1);
+    @include span-columns(10);
+    padding-left: 0;
+    padding-right: 0;
+    height: 550px;
   }
 }

@@ -61,8 +61,8 @@
 
 @include media($medium-screen-up) {
   .minor-projects-group__container {
-    padding-top: $large-spacing * 2;
-    padding-bottom: $large-spacing * 2;
+    padding-top: $large-spacing;
+    padding-bottom: $large-spacing;
   }
 
   .minor-project-section {
