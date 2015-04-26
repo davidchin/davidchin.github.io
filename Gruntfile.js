@@ -300,6 +300,13 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/_bower_components/ionicons/',
           src: ['fonts/*'],
           dest: '<%= yeoman.dist %>'
+        },
+
+        {
+          expand: true,
+          dot: true,
+          src: ['CNAME'],
+          dest: '<%= yeoman.dist %>'
         }]
       }
     },
