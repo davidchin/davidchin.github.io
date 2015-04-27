@@ -9,6 +9,14 @@
   .project-background__figure {
     @include vertical-gradient-mask($white);
   }
+
+  .project-background__figure--device {
+    height: auto;
+
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .project-article-section--12wbt-app {
@@ -16,6 +24,16 @@
 
   .project-background__figure {
     @include vertical-gradient-mask($blue);
+  }
+
+  .project-background__figure--device {
+    padding-bottom: 0;
+
+    .project-background__image {
+      position: relative;
+      width: auto;
+      left: -20%;
+    }
   }
 }
 
@@ -25,6 +43,14 @@
   .project-background__figure {
     @include vertical-gradient-mask($dark-gray);
   }
+
+  .project-background__figure--device {
+    height: auto;
+
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .project-article-section--beautyheaven {
@@ -32,6 +58,17 @@
 
   .project-background__figure {
     @include vertical-gradient-mask($turquoise);
+  }
+
+  .project-background__figure--device {
+    padding-bottom: 0;
+    height: 300px;
+
+    .project-background__image {
+      position: relative;
+      width: auto;
+      left: 20%;
+    }
   }
 }
 
@@ -61,6 +98,15 @@
 
       .project-background__figure:after {
         display: none;
+      }
+    }
+  }
+
+  .project-article-section--12wbt-app,
+  .project-article-section--beautyheaven {
+    .project-background__figure--device {
+      .project-background__image {
+        max-width: 500px;
       }
     }
   }

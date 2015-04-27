@@ -47,6 +47,12 @@
   }
 }
 
+.project-background__figure--device {
+  .project-background__image {
+    box-shadow: none;
+  }
+}
+
 .project-background__image {
   display: block;
   margin-left: auto;
@@ -56,6 +62,12 @@
 
 .project-background__image--small {
   width: 320px;
+}
+
+@include media($small-screen-up) {
+  .project-background__figure {
+    height: 440px;
+  }
 }
 
 @include media($medium-screen-up) {
