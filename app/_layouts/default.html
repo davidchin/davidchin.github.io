@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
 
-  <body class="{{ page.body_class }}">
+  <body itemscope itemtype="{{ site.data.settings.microdata.url }}/WebPage" class="{{ page.body_class }}">
     {% include header.html %}
 
     {{ content }}

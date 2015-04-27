@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<article>
+<article itemscope itemtype="{{ site.data.settings.microdata.url }}/Article">
   {% include page-header.html %}
 
-  <div class="page-content page-content--project">
+  <div itemprop="articleBody" class="page-content page-content--project">
     {{ content }}
   </div>
 </article>

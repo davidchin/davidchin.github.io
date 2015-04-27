@@ -12,6 +12,8 @@
    /
 {% endunless %}
 
-{{ post.date | date_to_long_string }}
+<span itemprop="datePublished">
+  {{ post.date | date_to_long_string }}
+</span>
 
 / <a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">0 Comments</a>

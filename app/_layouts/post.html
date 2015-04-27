@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article>
+<article itemscope itemtype="{{ site.data.settings.microdata.url }}/BlogPosting">
   {% include page-header.html %}
 
   <div class="page-content">
@@ -12,10 +12,12 @@ layout: default
           {% include blog/post-meta.html post=page %}
         </p>
 
-        {{ content }}
+        <div itemtype="articleBody">
+          {{ content }}
+        </div>
       </div>
 
-      <div class="blog-comment">
+      <div itemtype="comment" class="blog-comment">
         {% include disqus-comment.html %}
       </div>
     </div>
