@@ -48,3 +48,4 @@ permalink: /blog/:title/
 # Gems
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
