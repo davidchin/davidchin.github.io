@@ -79,8 +79,12 @@
 
 .hero-header__scroll-prompt {
   @include animation(scroll-prompt-up-down ease-in-out infinite 1.5s);
+  display: block;
   position: absolute;
+  text-align: center;
   bottom: $base-spacing;
+  left: 0;
+  right: 0;
   font-size: $large-font-size;
 }
 
