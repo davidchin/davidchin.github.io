@@ -16,7 +16,7 @@ Otherwise, if you don’t want the user interaction to change, you have to work 
 
 ## Demo
 
-You can check out the [demo](/demos/angular/endless-scroll) here. The example calls the Tumblr API and fetches some blog posts. Appending a page parameter in the URL, ie: `?page=2` would deep-link and fetch Page 2 initially.
+You can check out the [demo](http://codepen.io/davidchin/full/oXbYEg){:target="_blank"} here. The example calls the Tumblr API and fetches some blog posts. Appending a page parameter in the URL, ie: `?page=2` would deep-link and fetch Page 2 initially.
 
 ## Usage
 
