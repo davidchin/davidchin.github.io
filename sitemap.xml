@@ -44,13 +44,16 @@
     <loc>http://davidchin.me/projects/12wbt/</loc>
   </url>
   <url>
+    <loc>http://davidchin.me/demos/angular/endless-scroll/</loc>
+  </url>
+  <url>
+    <loc>http://davidchin.me/about/</loc>
+  </url>
+  <url>
     <loc>http://davidchin.me/blog/</loc>
   </url>
   <url>
     <loc>http://davidchin.me/</loc>
-  </url>
-  <url>
-    <loc>http://davidchin.me/about/</loc>
   </url>
   <url>
     <loc>http://davidchin.me/projects/12wbt-daily/</loc>
@@ -63,5 +66,8 @@
   </url>
   <url>
     <loc>http://davidchin.me/projects/vibe-hotels/</loc>
+  </url>
+  <url>
+    <loc>http://davidchin.me/demos/angular/endless-scroll/</loc>
   </url>
 </urlset>
