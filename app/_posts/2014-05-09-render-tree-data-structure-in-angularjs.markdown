@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render tree structure data in AngularJS
+title: Render tree data structure in AngularJS
 date: 2015-05-09 00:00:00
 tags: angularjs
 description: I came across a problem where I need to lazily render a navigation menu in a tree structure using AngularJS. The API returns the child pages of a parent page by id. For example, GET `/documents/1` gives you all the subpages of page 1. If you click on one of the subpages, it queries the API again to render its subpages, and so forth.
