@@ -5,9 +5,25 @@
     <description>I am a developer, specialising in front-end web and native application development.</description>
     <link>http://davidchin.me/</link>
     <atom:link href="http://davidchin.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 May 2015 09:32:20 +1000</pubDate>
-    <lastBuildDate>Sat, 09 May 2015 09:32:20 +1000</lastBuildDate>
+    <pubDate>Sat, 09 May 2015 12:11:30 +1000</pubDate>
+    <lastBuildDate>Sat, 09 May 2015 12:11:30 +1000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Render tree structure data in AngularJS</title>
+        <description>
+          
+            I came across a problem where I need to lazily render a navigation menu in a tree structure using AngularJS. The API returns the child pages of a parent page by id. For example, GET `/documents/1` gives you all the subpages of page 1. If you click on one of the subpages, it queries the API again to render its subpages, and so forth.
+          
+        </description>
+        <pubDate>Sat, 09 May 2015 10:00:00 +1000</pubDate>
+        <link>http://davidchin.me/blog/render-tree-structure-data-in-angularjs/</link>
+        <guid isPermaLink="true">http://davidchin.me/blog/render-tree-structure-data-in-angularjs/</guid>
+        
+        <category>angularjs</category>
+        
+        
+      </item>
     
       <item>
         <title>Create SEO friendly AngularJS app</title>
@@ -147,22 +163,6 @@
         <pubDate>Thu, 06 Mar 2014 11:00:00 +1100</pubDate>
         <link>http://davidchin.me/blog/how-to-check-if-a-css-rule-is-supported/</link>
         <guid isPermaLink="true">http://davidchin.me/blog/how-to-check-if-a-css-rule-is-supported/</guid>
-        
-        <category>javascript</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>How to round a number to certain decimal places</title>
-        <description>
-          
-            Here is a technique that I use to round a number to certain decimal places for display. Let’s say, if you want to round the result of 23/7 to 2 decimal places instead of rounding it to a whole number.
-          
-        </description>
-        <pubDate>Tue, 04 Mar 2014 11:00:00 +1100</pubDate>
-        <link>http://davidchin.me/blog/how-to-round-a-number-to-certain-decimal-places/</link>
-        <guid isPermaLink="true">http://davidchin.me/blog/how-to-round-a-number-to-certain-decimal-places/</guid>
         
         <category>javascript</category>
         
