@@ -5,20 +5,20 @@
     <description>I am a developer, specialising in front-end web and native application development.</description>
     <link>http://davidchin.me/</link>
     <atom:link href="http://davidchin.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 09 May 2015 12:11:30 +1000</pubDate>
-    <lastBuildDate>Sat, 09 May 2015 12:11:30 +1000</lastBuildDate>
+    <pubDate>Sat, 09 May 2015 12:15:45 +1000</pubDate>
+    <lastBuildDate>Sat, 09 May 2015 12:15:45 +1000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Render tree structure data in AngularJS</title>
+        <title>Render tree data structure in AngularJS</title>
         <description>
           
             I came across a problem where I need to lazily render a navigation menu in a tree structure using AngularJS. The API returns the child pages of a parent page by id. For example, GET `/documents/1` gives you all the subpages of page 1. If you click on one of the subpages, it queries the API again to render its subpages, and so forth.
           
         </description>
         <pubDate>Sat, 09 May 2015 10:00:00 +1000</pubDate>
-        <link>http://davidchin.me/blog/render-tree-structure-data-in-angularjs/</link>
-        <guid isPermaLink="true">http://davidchin.me/blog/render-tree-structure-data-in-angularjs/</guid>
+        <link>http://davidchin.me/blog/render-tree-data-structure-in-angularjs/</link>
+        <guid isPermaLink="true">http://davidchin.me/blog/render-tree-data-structure-in-angularjs/</guid>
         
         <category>angularjs</category>
         
