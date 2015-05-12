@@ -38,11 +38,14 @@
 }
 
 .minor-project-section__figure {
-  height: 200px;
   max-width: 280px;
   overflow: hidden;
   background: $light-gray;
   margin: 0 auto $base-spacing;
+
+  img {
+    display: block;
+  }
 }
 
 .minor-project-section__figure-caption {
@@ -72,7 +75,6 @@
   }
 
   .minor-project-section__figure {
-    height: 260px;
     max-width: none;
   }
 
