@@ -5,15 +5,15 @@
     <description>I am a developer, specialising in front-end web and native application development.</description>
     <link>http://davidchin.me/</link>
     <atom:link href="http://davidchin.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 13 May 2015 07:29:11 +1000</pubDate>
-    <lastBuildDate>Wed, 13 May 2015 07:29:11 +1000</lastBuildDate>
+    <pubDate>Wed, 13 May 2015 21:52:03 +1000</pubDate>
+    <lastBuildDate>Wed, 13 May 2015 21:52:03 +1000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Render tree data structure in AngularJS</title>
         <description>
           
-            I came across a problem where I need to lazily render a navigation menu in a tree structure using AngularJS. The API returns the child pages of a parent page by id. For example, GET `/documents/1` gives you all the subpages of page 1. If you click on one of the subpages, it queries the API again to render its subpages, and so forth.
+            I came across a problem where I needed to lazily render a navigation menu in a tree structure using AngularJS. The API returns the child pages of a parent page by id. For example, GET `/documents/1` gives you all the subpages of page 1. If you click on one of the subpages, it queries the API again to render its subpages, and so forth.
           
         </description>
         <pubDate>Sat, 09 May 2015 10:00:00 +1000</pubDate>
