@@ -14,19 +14,19 @@ The depth of the tree is unknown. The JSON response looks like this:
 [
   {
     id: 1,
-    name: 'Folder',
+    name: 'Folder A',
     hasChildren: true
   },
 
   {
     id: 2,
-    name: 'Folder',
+    name: 'Folder B',
     hasChildren: true
   },
 
   {
     id: 3,
-    name: 'Page',
+    name: 'Page A',
     hasChildren: false
   }
 ]
@@ -111,4 +111,7 @@ angular.module('application')
 
 As you can see, `documentTreeNode` compiles itself if it has leaf elements. It needs to be compiled manually, otherwise, you will get a recursive compilation error if the recursion is implemented in the template.
 
-The root `documents` object is the root of the tree structure, constructed using the data returned by API. The task of communicating with API is delegated to the `Documents` model. You can see the [full code and demo](http://codepen.io/davidchin/pen/BNjpNr) here.
+The root `documents` object is the root of the tree structure, constructed using the data returned by API. The task of communicating with API is delegated to the `Documents` model. You can see the [demo](http://codepen.io/davidchin/pen/BNjpNr) here.
+
+<p data-height="268" data-theme-id="0" data-slug-hash="BNjpNr" data-default-tab="result" data-user="davidchin" class='codepen'>See the Pen <a href='http://codepen.io/davidchin/pen/BNjpNr/'>BNjpNr</a> by David Chin (<a href='http://codepen.io/davidchin'>@davidchin</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
