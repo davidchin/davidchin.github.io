@@ -4,7 +4,7 @@ $heading-font-family: $base-font-family;
 $large-font-size: rem(18);
 $base-font-size: 16px;
 $small-font-size: rem(14);
-$code-font-size: rem(13);
+$code-font-size: $small-font-size;
 $em-base: $base-font-size;
 $rem-base: $base-font-size;
 $base-font-weight: 300;
