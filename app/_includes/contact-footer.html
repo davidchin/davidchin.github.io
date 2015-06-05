@@ -11,15 +11,15 @@
 
       <ul class="contact-footer__meta">
         <li>
-          <a href="mailto:{{ site.author.email }}">
-            <i class="ion-ios-email-outline"></i> {{ site.author.email }}
-          </a>
+          <span data-anchor-href="mailto:{{ site.author.email }}" data-anchor-title="{{ site.author.email }}">
+            <i class="ion-ios-email-outline"></i>
+          </span>
         </li>
 
         <li>
-          <a href="tel:{{ site.author.phone | remove:" " }}">
-            <i class="ion-ios-telephone-outline"></i> {{ site.author.phone }}
-          </a>
+          <span data-anchor-href="tel:{{ site.author.phone | remove:" " }}" data-anchor-title="{{ site.author.phone }}">
+            <i class="ion-ios-telephone-outline"></i>
+          </span>
         </li>
       </ul>
     </div>
