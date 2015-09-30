@@ -5,9 +5,25 @@
     <description>I am a developer, specialising in front-end web and native application development.</description>
     <link>http://davidchin.me/</link>
     <atom:link href="http://davidchin.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 21 Jun 2015 11:53:42 +1000</pubDate>
-    <lastBuildDate>Sun, 21 Jun 2015 11:53:42 +1000</lastBuildDate>
+    <pubDate>Wed, 30 Sep 2015 21:35:47 +1000</pubDate>
+    <lastBuildDate>Wed, 30 Sep 2015 21:35:47 +1000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Simple range slider component built with React</title>
+        <description>
+          
+            &lt;p&gt;Recently, I needed a component for accepting a range of numeric values inside a form. I couldn’t just use a native input range slider as it only accepts a single value. So I thought I might just write one myself. I decided to release it as a standalone package. You can check it out on &lt;a href=&quot;https://github.com/davidchin/react-input-range&quot;&gt;Github&lt;/a&gt; or try it in your project - &lt;code&gt;npm install react-input-range&lt;/code&gt;.&lt;/p&gt; &lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt; &lt;p&gt;&lt;code&gt;react-input-range&lt;/code&gt; allows users to input a range of numeric values or a single value within a predefined range. By default, basic styles are applied, but can be overridden easily.&lt;/p&gt; &lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;...
+          
+        </description>
+        <pubDate>Wed, 30 Sep 2015 10:00:00 +1000</pubDate>
+        <link>http://davidchin.me/blog/simple-range-slider-component-built-with-react/</link>
+        <guid isPermaLink="true">http://davidchin.me/blog/simple-range-slider-component-built-with-react/</guid>
+        
+        <category>react</category>
+        
+        
+      </item>
     
       <item>
         <title>Render tree data structure in AngularJS</title>
@@ -149,22 +165,6 @@
         <guid isPermaLink="true">http://davidchin.me/blog/how-to-break-angularjs-promise-chain/</guid>
         
         <category>angularjs</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>How to check if a CSS rule is supported</title>
-        <description>
-          
-            Sometimes, you want to check if a CSS rule is supported by your user’s current browser using Javascript. For example, you might want to check if the browser supports CSS transition, if not, use jQuery animation as a fallback.
-          
-        </description>
-        <pubDate>Thu, 06 Mar 2014 11:00:00 +1100</pubDate>
-        <link>http://davidchin.me/blog/how-to-check-if-a-css-rule-is-supported/</link>
-        <guid isPermaLink="true">http://davidchin.me/blog/how-to-check-if-a-css-rule-is-supported/</guid>
-        
-        <category>javascript</category>
         
         
       </item>
