@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Simple range slider component built with React
+title: Simple React Input Range component
 date: 2015-09-30 00:00:00
 tags: react
+redirect_from: /blog/simple-range-slider-component-built-with-react/
 ---
 
 Recently, I needed a component for accepting a range of numeric values inside a form. I couldn't just use a native input range slider as it only accepts a single value. So I thought I might just write one myself. I decided to release it as a standalone package. You can check it out on [Github](https://github.com/davidchin/react-input-range) or try it in your project - `npm install react-input-range`.
