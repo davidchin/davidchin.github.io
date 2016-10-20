@@ -8,3 +8,4 @@ This is my personal website built using Jekyll.
 2. `npm install` to install node packages
 3. `bower install` to install bower packages
 4. `grunt serve` to launch development server
+5. `grunt deploy` to release
