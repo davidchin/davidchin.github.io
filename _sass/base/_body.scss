@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: $background-color;
+    color: $text-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,42 @@
+.hero {
+    text-align: center;
+    max-width: 100%;
+    width: 960px;
+}
+
+.hero__description {
+    margin-bottom: $margin;
+    margin-top: -6%;
+}
+
+.hero__image {
+    display: block;
+    width: 100%;
+}
+
+.hero__navigation {
+    list-style: none;
+    margin: 0;
+    margin-bottom: $margin * 2;
+    padding: 0;
+}
+
+.hero__navigationIcon {
+    height: 20px;
+    width: 20px;
+}
+
+.hero__navigationIcon path {
+    fill: $link-color;
+}
+
+.hero__navigationIcon:hover path {
+    fill: $link-hover-color;
+}
+
+.hero__navigationItem {
+    display: inline-block;
+    font-size: $small-font-size;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
