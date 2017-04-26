@@ -11,7 +11,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-<link rel="stylesheet" href="{{ site.github.url }}/assets/css/index.css">
+{% css index %}
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">

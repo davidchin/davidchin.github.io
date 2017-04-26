@@ -4,5 +4,10 @@ description: The personal website of David Chin
 url: "http://davidchin.me"
 markdown: kramdown
 exclude:
-  - Gemfile
-  - Gemfile.lock
+    - Gemfile
+    - Gemfile.lock
+gems:
+    - jekyll-assets
+assets:
+    features:
+        automatic_img_size: false
