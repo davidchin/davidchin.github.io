@@ -1,0 +1,16 @@
+{
+  "name": "davidchin",
+  "version": "0.0.0",
+  "private": "true",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "JEKYLL_ENV=production bundle exec jekyll build",
+    "clean": "rm -rf _site",
+    "prerelease": "npm run build",
+    "release": "grunt buildcontrol"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-build-control": "^0.7.1"
+  }
+}
